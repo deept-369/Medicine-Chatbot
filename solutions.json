@@ -1,0 +1,3227 @@
+{
+  "solutions": {
+    "headache_prescription_logic": {
+      "mild_short": {
+        "medicine": "Paracetamol 500 mg",
+        "dosage": "1 tablet if needed (max 2 per day)",
+        "advice": "Drink water and rest",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      },
+      "mild": {
+        "medicine": "Paracetamol 500 mg",
+        "dosage": "1 tablet every 6 hours (max 3 per day)",
+        "advice": "Avoid screen time, rest properly",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      },
+      "moderate": {
+        "medicine": "Ibuprofen 400 mg",
+        "dosage": "1 tablet after food, twice daily",
+        "advice": "Stay hydrated, avoid stress",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "severe_prolonged": {
+        "medicine": "Naproxen 250 mg",
+        "dosage": "1 tablet every 12 hours",
+        "advice": "Seek medical attention if pain > 24 hours",
+        "image": "/static/images/Naproxen 250 mg.webp"
+      },
+      "tension": {
+        "medicine": "Paracetamol or Ibuprofen",
+        "dosage": "As needed, avoid overuse",
+        "advice": "Massage neck, reduce stress",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "normal": {
+        "medicine": "Paracetamol 650 mg",
+        "dosage": "Twice daily",
+        "advice": "Take rest and drink water",
+        "image": "/static/images/Paracetamol 650 mg.webp"
+      },
+      "migraine": {
+        "medicine": "Sumatriptan 50 mg",
+        "dosage": "1 tablet, repeat after 2 hours if needed",
+        "advice": "Stay in dark room, avoid noise",
+        "image": "/static/images/Sumatriptan 50 mg.webp"
+      },
+      "sinus": {
+        "medicine": "Steam inhalation + Paracetamol",
+        "dosage": "Paracetamol twice daily",
+        "advice": "Do steam 2–3 times daily",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      },
+      "severe": {
+        "medicine": "Naproxen 250 mg",
+        "dosage": "Twice daily after food",
+        "advice": "If vision problems continue → see doctor",
+        "image": "/static/images/Naproxen 250 mg.webp"
+      }
+    },
+    "fever_prescription_logic": {
+      "mild": {
+        "medicine": "Paracetamol 500 mg",
+        "dosage": "1 tablet every 6 hours (max 4 per day)",
+        "advice": "Drink plenty of fluids, rest in cool room",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      },
+      "moderate": {
+        "medicine": "Paracetamol 650 mg or Ibuprofen 400 mg",
+        "dosage": "Every 6-8 hours after food",
+        "advice": "Cold compress on forehead, stay hydrated",
+        "image": "/static/images/Paracetamol 650 mg.webp"
+      },
+      "high": {
+        "medicine": "Paracetamol 1000 mg",
+        "dosage": "Every 6 hours (max 4g per day)",
+        "advice": "Urgent: Monitor temperature, see doctor if > 102°F persists",
+        "image": "/static/images/Paracetamol 1000 mg.jpg"
+      },
+      "severe": {
+        "medicine": "Immediate medical attention required",
+        "dosage": "Do not self-medicate",
+        "advice": "Emergency: Go to hospital immediately",
+        "image": "/static/images/Immediate medical attention required.jpg"
+      },
+      "unknown": {
+        "medicine": "Paracetamol 500 mg",
+        "dosage": "1 tablet every 6-8 hours",
+        "advice": "Monitor temperature, drink fluids",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      },
+      "acute": {
+        "medicine": "Paracetamol 500 mg",
+        "dosage": "Every 6 hours as needed",
+        "advice": "Rest, fluids, monitor for other symptoms",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      },
+      "prolonged": {
+        "medicine": "Paracetamol + medical consultation",
+        "dosage": "As directed, but see doctor",
+        "advice": "See doctor within 24 hours for evaluation",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      },
+      "chronic": {
+        "medicine": "Medical evaluation required",
+        "dosage": "Consult doctor immediately",
+        "advice": "Fever > 7 days needs investigation",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "isolated": {
+        "medicine": "Paracetamol 500 mg",
+        "dosage": "Every 6-8 hours",
+        "advice": "Monitor symptoms, rest well",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      }
+    },
+    "common_cold_prescription_logic": {
+      "mild": {
+        "medicine": "Cetirizine 10 mg",
+        "dosage": "Once daily at night",
+        "advice": "Warm fluids, steam inhalation",
+        "image": "/static/images/Cetirizine 10 mg.webp"
+      },
+      "moderate": {
+        "medicine": "Decongestant nasal spray + Cetirizine",
+        "dosage": "Nasal spray 2-3 times/day, Cetirizine once daily",
+        "advice": "Steam 3 times daily, avoid cold foods",
+        "image": "/static/images/Decongestant nasal spray.webp"
+      },
+      "throat": {
+        "medicine": "Warm salt water gargle + Lozenges",
+        "dosage": "Gargle 3-4 times daily",
+        "advice": "Warm fluids, honey with warm water",
+        "image": "/static/images/Warm salt water gargle + Lozenges.webp"
+      },
+      "severe": {
+        "medicine": "Antihistamine + Paracetamol",
+        "dosage": "As per package instructions",
+        "advice": "Rest, fluids, see doctor if no improvement in 3 days",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "early": {
+        "medicine": "Vitamin C + warm fluids",
+        "dosage": "Vitamin C 500 mg twice daily",
+        "advice": "Rest, stay warm, increase fluid intake",
+        "image": "/static/images/Vitamin C.webp"
+      },
+      "active": {
+        "medicine": "Cetirizine 10 mg + Paracetamol",
+        "dosage": "Cetirizine once daily, Paracetamol as needed",
+        "advice": "Steam inhalation, avoid cold exposure",
+        "image": "/static/images/Cetirizine 10 mg.webp"
+      },
+      "prolonged": {
+        "medicine": "Medical consultation recommended",
+        "dosage": "Continue symptomatic treatment",
+        "advice": "See doctor to rule out infection",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "chronic": {
+        "medicine": "Doctor consultation required",
+        "dosage": "Needs medical evaluation",
+        "advice": "May need antibiotics or further tests",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "cough_prescription_logic": {
+      "dry": {
+        "medicine": "Dextromethorphan-based cough syrup",
+        "dosage": "10 ml three times daily",
+        "advice": "Warm fluids, honey with warm water",
+        "image": "/static/images/Dextromethorphan cough syrup.webp"
+      },
+      "productive_clear": {
+        "medicine": "Expectorant (Guaifenesin)",
+        "dosage": "As per package instructions",
+        "advice": "Steam inhalation, drink warm water",
+        "image": "/static/images/Expectorant (Guaifenesin).webp"
+      },
+      "productive_colored": {
+        "medicine": "Medical consultation needed",
+        "dosage": "May need antibiotics",
+        "advice": "See doctor - possible infection",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "severe": {
+        "medicine": "Emergency medical attention",
+        "dosage": "Go to hospital immediately",
+        "advice": "Coughing blood requires urgent care",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "acute": {
+        "medicine": "Honey-based cough syrup",
+        "dosage": "10 ml 2-3 times daily",
+        "advice": "Warm fluids, avoid cold items",
+        "image": "/static/images/Honey-based cough syrup.webp"
+      },
+      "subacute": {
+        "medicine": "Cough syrup + Steam inhalation",
+        "dosage": "As directed on package",
+        "advice": "Continue treatment, see doctor if worsens",
+        "image": "/static/images/Dextromethorphan cough syrup.webp"
+      },
+      "prolonged": {
+        "medicine": "Medical evaluation required",
+        "dosage": "Doctor consultation",
+        "advice": "Persistent cough needs investigation",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "chronic": {
+        "medicine": "Doctor consultation essential",
+        "dosage": "Needs proper diagnosis",
+        "advice": "May indicate underlying condition",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "stomach_pain_prescription_logic": {
+      "upper": {
+        "medicine": "Antacid (Calcium carbonate)",
+        "dosage": "2 tablets after meals",
+        "advice": "Avoid spicy food, eat small meals",
+        "image": "/static/images/Antacid (Calcium carbonate).webp"
+      },
+      "middle": {
+        "medicine": "Antispasmodic + Antacid",
+        "dosage": "As per package instructions",
+        "advice": "Avoid oily food, drink warm water",
+        "image": "/static/images/Antspasmodic + Antacid.webp"
+      },
+      "lower": {
+        "medicine": "Antispasmodic medication",
+        "dosage": "As directed",
+        "advice": "If severe or persistent, see doctor immediately",
+        "image": "/static/images/Antispasmodic medication.webp"
+      },
+      "generalized": {
+        "medicine": "Medical evaluation needed",
+        "dosage": "Do not self-medicate",
+        "advice": "See doctor - may need examination",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "sharp": {
+        "medicine": "Immediate medical attention",
+        "dosage": "Go to doctor/hospital",
+        "advice": "Sharp pain may indicate serious condition",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "dull": {
+        "medicine": "Antacid + Light diet",
+        "dosage": "Antacid after meals",
+        "advice": "Avoid heavy meals, rest",
+        "image": "/static/images/Antacid (Calcium carbonate).webp"
+      },
+      "cramps": {
+        "medicine": "Antispasmodic",
+        "dosage": "As per package",
+        "advice": "Warm compress, avoid trigger foods",
+        "image": "/static/images/Antspasmodic + Antacid.webp"
+      },
+      "burning": {
+        "medicine": "Antacid + H2 blocker",
+        "dosage": "Before meals",
+        "advice": "Avoid spicy/acidic foods",
+        "image": "/static/images/Antacid (Calcium carbonate).webp"
+      },
+      "bloating": {
+        "medicine": "Simethicone drops",
+        "dosage": "After meals",
+        "advice": "Avoid gas-producing foods",
+        "image": "/static/images/Simethicone.webp"
+      },
+      "nausea": {
+        "medicine": "Anti-nausea medication",
+        "dosage": "As needed",
+        "advice": "Light meals, avoid strong smells",
+        "image": "/static/images/Anti-nausea medication.webp"
+      },
+      "gas": {
+        "medicine": "Digestive enzyme + Simethicone",
+        "dosage": "After meals",
+        "advice": "Avoid carbonated drinks, eat slowly",
+        "image": "/static/images/Simethicone.webp"
+      },
+      "isolated": {
+        "medicine": "Antacid",
+        "dosage": "As needed",
+        "advice": "Monitor symptoms, light diet",
+        "image": "/static/images/Antacid (Calcium carbonate).webp"
+      }
+    },
+    "acidity_prescription_logic": {
+      "severe_heartburn": {
+        "medicine": "Omeprazole 20 mg + Antacid",
+        "dosage": "Omeprazole once daily before breakfast",
+        "advice": "Avoid lying down after meals, elevate head while sleeping",
+        "image": "/static/images/PPI (Omeprazole 20 mg).webp"
+      },
+      "acid_reflux": {
+        "medicine": "H2 blocker (Ranitidine) or Antacid",
+        "dosage": "Before meals",
+        "advice": "Avoid trigger foods, eat small frequent meals",
+        "image": "/static/images/H2 blocker (Ranitidine).webp"
+      },
+      "chest_burn": {
+        "medicine": "Antacid gel",
+        "dosage": "15 ml after meals and at bedtime",
+        "advice": "Avoid spicy/oily food, don't lie down immediately",
+        "image": "/static/images/Antacid gel.webp"
+      },
+      "multiple": {
+        "medicine": "PPI (Omeprazole) + Antacid",
+        "dosage": "Omeprazole 20 mg once daily",
+        "advice": "See doctor if symptoms persist > 3 days",
+        "image": "/static/images/PPI (Omeprazole 20 mg).webp"
+      },
+      "spicy": {
+        "medicine": "Antacid",
+        "dosage": "After meals",
+        "advice": "Avoid spicy food for 2-3 days",
+        "image": "/static/images/Antacid (Calcium carbonate).webp"
+      },
+      "oily": {
+        "medicine": "Digestive enzyme + Antacid",
+        "dosage": "After meals",
+        "advice": "Light diet, avoid fried foods",
+        "image": "/static/images/Digestive enzyme.webp"
+      },
+      "heavy": {
+        "medicine": "Antacid + Digestive enzyme",
+        "dosage": "After meals",
+        "advice": "Eat smaller portions, walk after eating",
+        "image": "/static/images/Antacid (Calcium carbonate).webp"
+      },
+      "acute": {
+        "medicine": "Antacid",
+        "dosage": "As needed",
+        "advice": "Light meals, avoid triggers",
+        "image": "/static/images/Antacid (Calcium carbonate).webp"
+      },
+      "recent": {
+        "medicine": "Antacid gel",
+        "dosage": "15 ml as needed",
+        "advice": "Monitor triggers, light diet",
+        "image": "/static/images/Antacid gel.webp"
+      },
+      "today": {
+        "medicine": "Antacid tablets",
+        "dosage": "2 tablets after meals",
+        "advice": "Avoid acidic foods today",
+        "image": "/static/images/Antacid tablets.webp"
+      },
+      "chronic": {
+        "medicine": "Medical consultation + PPI",
+        "dosage": "Doctor's prescription needed",
+        "advice": "See gastroenterologist for evaluation",
+        "image": "/static/images/medical-prescription.png"
+      }
+    },
+    "diarrhea_prescription_logic": {
+      "mild": {
+        "medicine": "ORS (Oral Rehydration Solution)",
+        "dosage": "After each loose stool",
+        "advice": "BRAT diet (Banana, Rice, Applesauce, Toast)",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "moderate": {
+        "medicine": "ORS + Probiotics",
+        "dosage": "ORS frequently, Probiotics twice daily",
+        "advice": "Avoid dairy, stay hydrated",
+        "image": "/static/images/Digestive enzyme.webp"
+      },
+      "severe": {
+        "medicine": "ORS + Medical consultation",
+        "dosage": "ORS every 30 minutes",
+        "advice": "See doctor - may need anti-diarrheal medication",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "extreme": {
+        "medicine": "Emergency medical attention + IV fluids",
+        "dosage": "Hospital care needed",
+        "advice": "Risk of severe dehydration - go to hospital",
+        "image": "/static/images/IV fluids (hospital use).webp"
+      },
+      "severe_dehydration": {
+        "medicine": "Immediate medical attention + IV fluids",
+        "dosage": "Emergency care",
+        "advice": "Go to hospital immediately",
+        "image": "/static/images/IV fluids (hospital use).webp"
+      },
+      "moderate_dehydration": {
+        "medicine": "ORS + Zinc supplements",
+        "dosage": "ORS every hour, Zinc once daily",
+        "advice": "Drink plenty of fluids, see doctor if no improvement",
+        "image": "/static/images/Zinc supplements.webp"
+      },
+      "mild_dehydration": {
+        "medicine": "ORS",
+        "dosage": "After each stool",
+        "advice": "Increase fluid intake",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "hydrated": {
+        "medicine": "ORS + Light diet",
+        "dosage": "Maintain hydration",
+        "advice": "Continue BRAT diet",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "food_poisoning": {
+        "medicine": "ORS + Rest",
+        "dosage": "Frequent ORS",
+        "advice": "See doctor if symptoms severe or persistent",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "contaminated": {
+        "medicine": "ORS + possible antibiotics",
+        "dosage": "See doctor for evaluation",
+        "advice": "May need stool test and antibiotics",
+        "image": "/static/images/Antibiotics (doctor prescribed).webp"
+      },
+      "new_food": {
+        "medicine": "ORS + Avoid trigger food",
+        "dosage": "After each stool",
+        "advice": "Identify and avoid allergen",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      }
+    },
+    "constipation_prescription_logic": {
+      "acute": {
+        "medicine": "Isabgol (Psyllium husk)",
+        "dosage": "2 teaspoons with warm water at night",
+        "advice": "Increase water intake, eat fiber-rich foods",
+        "image": "/static/images/Isabgol (Psyllium husk).webp"
+      },
+      "moderate": {
+        "medicine": "Mild laxative (Lactulose)",
+        "dosage": "15 ml at bedtime",
+        "advice": "Increase fruits, vegetables, and water",
+        "image": "/static/images/Mild laxative (Lactulose).webp"
+      },
+      "severe": {
+        "medicine": "Medical consultation + Laxative",
+        "dosage": "As prescribed by doctor",
+        "advice": "See doctor - may need examination",
+        "image": "/static/images/Mild laxative (Lactulose).webp"
+      },
+      "chronic": {
+        "medicine": "Doctor consultation required",
+        "dosage": "Needs proper evaluation",
+        "advice": "May need lifestyle changes and proper treatment plan",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "irregular": {
+        "medicine": "Fiber supplement",
+        "dosage": "Daily with plenty of water",
+        "advice": "Regular meal times, exercise",
+        "image": "/static/images/Fiber supplement.webp"
+      },
+      "poor_diet": {
+        "medicine": "Fiber supplement + Diet modification",
+        "dosage": "As directed",
+        "advice": "Drink 8-10 glasses water, add fruits/vegetables",
+        "image": "/static/images/Fiber supplement.webp"
+      },
+      "irregular_diet": {
+        "medicine": "Isabgol",
+        "dosage": "Once daily",
+        "advice": "Establish regular eating and drinking habits",
+        "image": "/static/images/Isabgol (Psyllium husk).webp"
+      },
+      "good_diet": {
+        "medicine": "Mild laxative if needed",
+        "dosage": "As needed",
+        "advice": "Continue good habits, may need medical evaluation",
+        "image": "/static/images/Mild laxative (Lactulose).webp"
+      }
+    },
+    "vomiting_prescription_logic": {
+      "single": {
+        "medicine": "ORS + Rest",
+        "dosage": "Small sips every 10 minutes",
+        "advice": "Rest stomach for 1-2 hours, then light fluids",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "moderate": {
+        "medicine": "Ondansetron 4 mg + ORS",
+        "dosage": "Ondansetron once, ORS frequently",
+        "advice": "Avoid solid food for few hours",
+        "image": "/static/images/Ondansetron 4 mg.webp"
+      },
+      "severe": {
+        "medicine": "Anti-emetic + Medical consultation",
+        "dosage": "See doctor",
+        "advice": "Risk of dehydration - medical attention needed",
+        "image": "/static/images/Anti-emetic.jpg"
+      },
+      "extreme": {
+        "medicine": "Emergency medical care",
+        "dosage": "Hospital treatment needed",
+        "advice": "Go to hospital - may need IV fluids",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "persistent": {
+        "medicine": "Ondansetron + Doctor consultation",
+        "dosage": "As prescribed",
+        "advice": "See doctor to find underlying cause",
+        "image": "/static/images/Ondansetron 4 mg.webp"
+      },
+      "intermittent": {
+        "medicine": "Anti-nausea medication + ORS",
+        "dosage": "As needed",
+        "advice": "Small frequent sips, avoid triggers",
+        "image": "/static/images/Anti-nausea medication.webp"
+      },
+      "post_meal": {
+        "medicine": "Digestive enzyme + Antacid",
+        "dosage": "Before meals",
+        "advice": "Eat slowly, avoid heavy meals",
+        "image": "/static/images/Digestive enzyme.webp"
+      },
+      "isolated": {
+        "medicine": "ORS",
+        "dosage": "Frequent small sips",
+        "advice": "Monitor for other symptoms",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "food_related": {
+        "medicine": "ORS + Rest",
+        "dosage": "Hydration focus",
+        "advice": "Possible food poisoning - see doctor if severe",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "delayed": {
+        "medicine": "ORS + Medical evaluation",
+        "dosage": "Stay hydrated",
+        "advice": "May indicate food poisoning",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "non_food": {
+        "medicine": "Medical consultation",
+        "dosage": "Needs evaluation",
+        "advice": "See doctor to identify cause",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "empty_stomach": {
+        "medicine": "ORS + Anti-nausea",
+        "dosage": "Small sips",
+        "advice": "May be gastritis - see doctor if persists",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      }
+    },
+    "toothache_prescription_logic": {
+      "localized": {
+        "medicine": "Ibuprofen 400 mg + Clove oil",
+        "dosage": "Ibuprofen every 8 hours, Clove oil on affected area",
+        "advice": "See dentist within 24-48 hours",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "multiple": {
+        "medicine": "Pain reliever + Dentist visit",
+        "dosage": "As needed for pain",
+        "advice": "Schedule dental examination soon",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "generalized": {
+        "medicine": "Pain reliever + Urgent dental care",
+        "dosage": "As directed",
+        "advice": "See dentist immediately - may be infection",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "referred": {
+        "medicine": "Strong pain reliever + Immediate dental care",
+        "dosage": "As prescribed",
+        "advice": "Urgent: See dentist today",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "mild": {
+        "medicine": "Paracetamol 500 mg",
+        "dosage": "Every 6-8 hours",
+        "advice": "Rinse with warm salt water, see dentist",
+        "image": "/static/images/Paracetamol 500 mg.webp"
+      },
+      "moderate": {
+        "medicine": "Ibuprofen 400 mg",
+        "dosage": "Every 8 hours after food",
+        "advice": "See dentist soon, avoid hot/cold foods",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "severe": {
+        "medicine": "Ibuprofen + Paracetamol combination",
+        "dosage": "As directed, alternate if needed",
+        "advice": "Emergency dental visit needed",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "extreme": {
+        "medicine": "Emergency dental care",
+        "dosage": "Professional treatment required",
+        "advice": "Go to emergency dentist immediately",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "swollen": {
+        "medicine": "Antibiotics + Pain reliever",
+        "dosage": "Needs dental prescription",
+        "advice": "Infection present - see dentist urgently",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "sensitive": {
+        "medicine": "Desensitizing toothpaste + Pain reliever",
+        "dosage": "Use sensitive toothpaste regularly",
+        "advice": "Avoid extreme temperatures, see dentist",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "pressure_pain": {
+        "medicine": "Ibuprofen + Soft diet",
+        "dosage": "As needed",
+        "advice": "May be cavity - dental appointment needed",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      }
+    },
+    "back_pain_prescription_logic": {
+      "upper": {
+        "medicine": "Ibuprofen gel + Hot compress",
+        "dosage": "Apply gel 3 times daily",
+        "advice": "Posture correction, shoulder exercises",
+        "image": "/static/images/Ibuprofen gel.jpg"
+      },
+      "middle": {
+        "medicine": "Pain reliever + Physiotherapy",
+        "dosage": "As needed",
+        "advice": "Avoid heavy lifting, proper posture",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "lower": {
+        "medicine": "Ibuprofen 400 mg + Muscle relaxant",
+        "dosage": "Twice daily after food",
+        "advice": "Hot compress, gentle stretching",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "generalized": {
+        "medicine": "Medical evaluation + Pain management",
+        "dosage": "See doctor",
+        "advice": "May need X-ray or MRI",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "sharp": {
+        "medicine": "Strong pain reliever + Rest",
+        "dosage": "As prescribed",
+        "advice": "Avoid movement, see doctor if severe",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "dull": {
+        "medicine": "Ibuprofen + Hot/cold therapy",
+        "dosage": "Every 8 hours",
+        "advice": "Gentle exercises, improve posture",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "burning": {
+        "medicine": "Medical consultation",
+        "dosage": "May need nerve medication",
+        "advice": "Could be nerve-related - see doctor",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "stiffness": {
+        "medicine": "Muscle relaxant + Stretching",
+        "dosage": "As directed",
+        "advice": "Hot compress, gentle yoga/stretches",
+        "image": "/static/images/Muscle relaxant.webp"
+      },
+      "strain": {
+        "medicine": "Rest + Ibuprofen + Ice/Heat",
+        "dosage": "Ibuprofen as needed",
+        "advice": "Rest for 24-48 hours, then gentle movement",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "postural": {
+        "medicine": "Pain reliever + Ergonomic correction",
+        "dosage": "As needed",
+        "advice": "Fix workstation ergonomics, take breaks",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "activity": {
+        "medicine": "Rest + Ice + Pain reliever",
+        "dosage": "First 48 hours ice, then heat",
+        "advice": "Rest, then gradual return to activity",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "spontaneous": {
+        "medicine": "Medical evaluation",
+        "dosage": "Needs diagnosis",
+        "advice": "See doctor to identify cause",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "skin_rash_prescription_logic": {
+      "upper_body": {
+        "medicine": "Antihistamine + Calamine lotion",
+        "dosage": "Antihistamine once daily, lotion as needed",
+        "advice": "Avoid scratching, cool compress",
+        "image": "/static/images/Calamine lotion.webp"
+      },
+      "limbs": {
+        "medicine": "Hydrocortisone cream 1%",
+        "dosage": "Apply twice daily",
+        "advice": "Keep area clean and dry",
+        "image": "/static/images/Hydrocortisone cream 1%.webp"
+      },
+      "trunk": {
+        "medicine": "Antihistamine + Topical steroid",
+        "dosage": "As directed",
+        "advice": "Loose cotton clothing, avoid irritants",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "widespread": {
+        "medicine": "Medical consultation + Oral antihistamine",
+        "dosage": "See doctor",
+        "advice": "May need systemic treatment",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "inflammatory": {
+        "medicine": "Antihistamine + Steroid cream",
+        "dosage": "Oral once daily, cream twice daily",
+        "advice": "Avoid triggers, cool compress",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "raised": {
+        "medicine": "Antihistamine + Calamine",
+        "dosage": "As directed",
+        "advice": "Don't scratch, see doctor if worsens",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "flat": {
+        "medicine": "Moisturizer + Antihistamine",
+        "dosage": "As needed",
+        "advice": "Keep hydrated, avoid sun",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "severe": {
+        "medicine": "Immediate medical attention",
+        "dosage": "Professional care needed",
+        "advice": "Possible infection - see doctor urgently",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "progressive": {
+        "medicine": "Urgent medical consultation",
+        "dosage": "See doctor today",
+        "advice": "Spreading rash needs evaluation",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "gradual": {
+        "medicine": "Antihistamine + Monitor",
+        "dosage": "Once daily",
+        "advice": "See doctor if continues spreading",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "localized": {
+        "medicine": "Topical cream + Antihistamine",
+        "dosage": "As directed",
+        "advice": "Identify and avoid trigger",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "improving": {
+        "medicine": "Continue current treatment",
+        "dosage": "As started",
+        "advice": "Maintain hygiene, avoid irritants",
+        "image": "/static/images/Antihistamine (general).webp"
+      }
+    },
+    "anxiety_prescription_logic": {
+      "physical": {
+        "medicine": "Breathing exercises + Propranolol if prescribed",
+        "dosage": "Practice breathing 3 times daily",
+        "advice": "Deep breathing, progressive muscle relaxation",
+        "image": "/static/images/Propranolol (if prescribed).webp"
+      },
+      "sweating": {
+        "medicine": "Relaxation techniques",
+        "dosage": "Regular practice",
+        "advice": "Manage triggers, stay cool, hydrate",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "psychological": {
+        "medicine": "Counseling + Relaxation techniques",
+        "dosage": "Regular therapy sessions",
+        "advice": "Consider cognitive behavioral therapy",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "severe": {
+        "medicine": "Professional mental health consultation",
+        "dosage": "May need medication",
+        "advice": "See psychiatrist or psychologist urgently",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "social": {
+        "medicine": "Therapy + Gradual exposure",
+        "dosage": "Professional guidance",
+        "advice": "Social skills training, support groups",
+        "image": "/static/images/Therapy + Gradual exposure.png"
+      },
+      "phobic": {
+        "medicine": "Cognitive behavioral therapy",
+        "dosage": "Regular sessions",
+        "advice": "Gradual exposure therapy with professional",
+        "image": "/static/images/Therapy + Gradual exposure.png"
+      },
+      "generalized": {
+        "medicine": "Professional consultation",
+        "dosage": "May need medication + therapy",
+        "advice": "See mental health professional",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "panic": {
+        "medicine": "Emergency: Breathing techniques + Medical help",
+        "dosage": "Professional treatment needed",
+        "advice": "Seek immediate mental health support",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "acute": {
+        "medicine": "Breathing exercises + Relaxation",
+        "dosage": "As needed",
+        "advice": "Identify triggers, stress management",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "recent": {
+        "medicine": "Stress management techniques",
+        "dosage": "Daily practice",
+        "advice": "Exercise, meditation, adequate sleep",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "persistent": {
+        "medicine": "Professional consultation recommended",
+        "dosage": "Therapy sessions",
+        "advice": "Consider counseling or therapy",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "chronic": {
+        "medicine": "Mental health professional + possible medication",
+        "dosage": "As prescribed",
+        "advice": "Long-term management plan needed",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "insomnia_prescription_logic": {
+      "onset": {
+        "medicine": "Sleep hygiene + Melatonin if needed",
+        "dosage": "Melatonin 3 mg 30 min before bed",
+        "advice": "Regular sleep schedule, avoid screens before bed",
+        "image": "/static/images/Melatonin 3–5 mg.webp"
+      },
+      "maintenance": {
+        "medicine": "Sleep hygiene + Relaxation techniques",
+        "dosage": "Non-medication first",
+        "advice": "Address night-time waking causes",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "early_morning": {
+        "medicine": "Sleep schedule adjustment",
+        "dosage": "Behavioral therapy",
+        "advice": "Avoid napping, regular wake time",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "mixed": {
+        "medicine": "Professional sleep evaluation",
+        "dosage": "May need medication",
+        "advice": "See doctor - comprehensive sleep assessment needed",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "severe": {
+        "medicine": "Medical consultation + Sleep study",
+        "dosage": "Professional treatment",
+        "advice": "Urgent evaluation needed",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "moderate": {
+        "medicine": "Melatonin + Sleep hygiene",
+        "dosage": "3-5 mg before bed",
+        "advice": "Create bedtime routine, dark quiet room",
+        "image": "/static/images/Melatonin 3–5 mg.webp"
+      },
+      "mild": {
+        "medicine": "Natural sleep aids (chamomile tea)",
+        "dosage": "Before bedtime",
+        "advice": "Relaxation exercises, regular schedule",
+        "image": "/static/images/Natural sleep aids (e.g., chamomile tea).webp"
+      },
+      "poor_quality": {
+        "medicine": "Sleep hygiene optimization",
+        "dosage": "Non-medication approach",
+        "advice": "Exercise, avoid caffeine, comfortable sleep environment",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "high_stress": {
+        "medicine": "Stress management + Sleep hygiene",
+        "dosage": "Relaxation techniques",
+        "advice": "Address stress sources, meditation, therapy",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "moderate_stress": {
+        "medicine": "Relaxation techniques",
+        "dosage": "Daily practice",
+        "advice": "Exercise, journaling, wind-down routine",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "mild_stress": {
+        "medicine": "Sleep hygiene",
+        "dosage": "Behavioral changes",
+        "advice": "Regular exercise, limit screen time",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "no_stress": {
+        "medicine": "Medical evaluation",
+        "dosage": "May need sleep study",
+        "advice": "Rule out sleep disorders",
+        "image": "/static/images/Emergency medical attention.jpg"
+      }
+    },
+    "breathlessness_prescription_logic": {
+      "severe": {
+        "medicine": "Emergency medical attention",
+        "dosage": "Call ambulance immediately",
+        "advice": "Go to hospital - possible cardiac/respiratory emergency",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "moderate": {
+        "medicine": "Medical consultation + possible bronchodilator",
+        "dosage": "See doctor today",
+        "advice": "May need oxygen, chest X-ray",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "mild": {
+        "medicine": "Rest + Medical evaluation",
+        "dosage": "Schedule doctor visit",
+        "advice": "Monitor symptoms, avoid exertion",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "exertional": {
+        "medicine": "Cardiac/pulmonary evaluation",
+        "dosage": "Doctor consultation",
+        "advice": "May need stress test, lung function tests",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "rest": {
+        "medicine": "Emergency care - Call ambulance",
+        "dosage": "Immediate hospital care",
+        "advice": "Critical: Go to ER immediately",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "walking": {
+        "medicine": "Medical evaluation + Rest",
+        "dosage": "See doctor soon",
+        "advice": "Possible cardiac or lung issue - needs assessment",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "stairs": {
+        "medicine": "Doctor consultation",
+        "dosage": "Evaluation needed",
+        "advice": "May need cardiac workup",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "exercise": {
+        "medicine": "Fitness assessment + Doctor check",
+        "dosage": "Rule out medical causes",
+        "advice": "May be deconditioning or underlying issue",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "acute": {
+        "medicine": "Emergency evaluation",
+        "dosage": "Immediate medical attention",
+        "advice": "Sudden breathlessness needs urgent care",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "recent": {
+        "medicine": "Doctor consultation today",
+        "dosage": "Urgent evaluation",
+        "advice": "Don't delay - see doctor",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "subacute": {
+        "medicine": "Medical consultation + tests",
+        "dosage": "See doctor soon",
+        "advice": "Needs chest X-ray, lung function tests",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "chronic": {
+        "medicine": "Pulmonologist consultation",
+        "dosage": "Specialist care needed",
+        "advice": "May need long-term management plan",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "fatigue_prescription_logic": {
+      "severe": {
+        "medicine": "Medical evaluation + Blood tests",
+        "dosage": "Doctor consultation",
+        "advice": "Check for anemia, thyroid, vitamin deficiencies",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "persistent_onset": {
+        "medicine": "Doctor consultation + Lifestyle changes",
+        "dosage": "Evaluation needed",
+        "advice": "May need tests, improve sleep and diet",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "easy_fatigue": {
+        "medicine": "Medical check + Multivitamin",
+        "dosage": "Once daily supplement",
+        "advice": "Rule out medical causes, regular exercise",
+        "image": "/static/images/Multivitamin supplement.webp"
+      },
+      "intermittent": {
+        "medicine": "Lifestyle optimization",
+        "dosage": "Non-medication first",
+        "advice": "Regular sleep, balanced diet, hydration",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "poor_sleep": {
+        "medicine": "Sleep hygiene + Address sleep issues",
+        "dosage": "Behavioral changes",
+        "advice": "Fix sleep schedule, create bedtime routine",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "unrefreshing": {
+        "medicine": "Sleep study evaluation",
+        "dosage": "Doctor consultation",
+        "advice": "May have sleep apnea or other sleep disorder",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "irregular": {
+        "medicine": "Schedule regulation",
+        "dosage": "Behavioral changes",
+        "advice": "Fixed sleep-wake times, avoid napping",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "despite_sleep": {
+        "medicine": "Medical evaluation + Blood tests",
+        "dosage": "Doctor consultation",
+        "advice": "Check thyroid, anemia, diabetes, depression",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "acute": {
+        "medicine": "Rest + Hydration + Nutrition",
+        "dosage": "Self-care focus",
+        "advice": "May be viral - rest and monitor",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "recent": {
+        "medicine": "Multivitamin + Lifestyle review",
+        "dosage": "Once daily",
+        "advice": "Improve diet, exercise, stress management",
+        "image": "/static/images/Multivitamin supplement.webp"
+      },
+      "persistent_ongoing": {
+        "medicine": "Comprehensive medical workup",
+        "dosage": "Doctor consultation",
+        "advice": "Needs thorough evaluation",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "chronic": {
+        "medicine": "Specialist consultation",
+        "dosage": "May need multiple tests",
+        "advice": "Rule out chronic fatigue syndrome, other conditions",
+        "image": "/static/images/Emergency medical attention.jpg"
+      }
+    },
+    "allergy_prescription_logic": {
+      "environmental": {
+        "medicine": "Antihistamine (Cetirizine 10 mg) + Air purifier",
+        "dosage": "Once daily",
+        "advice": "Avoid dust exposure, use mask, keep windows closed",
+        "image": "/static/images/Cetirizine 10 mg.webp"
+      },
+      "food": {
+        "medicine": "Antihistamine + Avoid allergen",
+        "dosage": "As needed for reaction",
+        "advice": "Identify food trigger, consider allergy testing",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "seasonal": {
+        "medicine": "Antihistamine + Nasal spray",
+        "dosage": "Daily during season",
+        "advice": "Start before season, avoid outdoor exposure",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "unknown": {
+        "medicine": "Antihistamine + Allergy testing",
+        "dosage": "As directed",
+        "advice": "See allergist for testing",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "respiratory": {
+        "medicine": "Antihistamine + Nasal decongestant",
+        "dosage": "Antihistamine once daily",
+        "advice": "Avoid allergen, steam inhalation",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "skin": {
+        "medicine": "Antihistamine + Hydrocortisone cream",
+        "dosage": "Oral once daily, cream twice daily",
+        "advice": "Cool compress, avoid scratching",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "nasal": {
+        "medicine": "Antihistamine + Saline nasal spray",
+        "dosage": "As directed",
+        "advice": "Keep nasal passages clear",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "severe": {
+        "medicine": "Medical attention + Multiple medications",
+        "dosage": "Doctor consultation",
+        "advice": "May need epinephrine if anaphylaxis risk",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "acute": {
+        "medicine": "Antihistamine immediately",
+        "dosage": "As directed on package",
+        "advice": "Remove from allergen, monitor for worsening",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "recent": {
+        "medicine": "Antihistamine + Identify trigger",
+        "dosage": "Continue as needed",
+        "advice": "Track symptoms to find cause",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "prolonged": {
+        "medicine": "Doctor consultation + Daily antihistamine",
+        "dosage": "Preventive approach",
+        "advice": "May need allergy testing",
+        "image": "/static/images/Antihistamine (general).webp"
+      },
+      "chronic": {
+        "medicine": "Allergist consultation + Immunotherapy",
+        "dosage": "Long-term management",
+        "advice": "Consider allergy shots or sublingual therapy",
+        "image": "/static/images/Allergist consultation + Immunotherapy.webp"
+      }
+    },
+    "period_pain_prescription_logic": {
+      "mild": {
+        "medicine": "Ibuprofen 400 mg",
+        "dosage": "Every 6-8 hours as needed",
+        "advice": "Heat pad, light exercise, stay hydrated",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "moderate": {
+        "medicine": "Ibuprofen 400 mg + Hyoscine",
+        "dosage": "Start at onset of period",
+        "advice": "Heat therapy, rest, avoid caffeine",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "severe": {
+        "medicine": "Strong pain reliever + Doctor consultation",
+        "dosage": "As prescribed",
+        "advice": "See gynecologist - may need hormonal treatment",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "extreme": {
+        "medicine": "Medical evaluation urgently",
+        "dosage": "Professional care",
+        "advice": "Rule out endometriosis or other conditions",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "abdominal": {
+        "medicine": "Ibuprofen + Heat pad",
+        "dosage": "Every 6-8 hours",
+        "advice": "Lower abdomen heat therapy",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "back": {
+        "medicine": "Ibuprofen + Back massage",
+        "dosage": "As needed",
+        "advice": "Heat pad on lower back",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "both": {
+        "medicine": "Ibuprofen + Antispasmodic",
+        "dosage": "Combination therapy",
+        "advice": "Heat therapy both areas, rest",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "radiating": {
+        "medicine": "Strong pain reliever + Medical consultation",
+        "dosage": "See doctor",
+        "advice": "May need hormonal treatment",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "short": {
+        "medicine": "Ibuprofen as needed",
+        "dosage": "During painful hours",
+        "advice": "Heat pad, gentle movement",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "prolonged": {
+        "medicine": "Medical consultation",
+        "dosage": "May need hormonal therapy",
+        "advice": "Extended pain not normal - see gynecologist",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "persistent": {
+        "medicine": "Gynecologist consultation + Hormonal treatment",
+        "dosage": "Long-term management needed",
+        "advice": "May need birth control or other hormonal therapy",
+        "image": "/static/images/Allergist consultation + Immunotherapy.webp"
+      }
+    },
+    "urine_infection_prescription_logic": {
+      "severe_burning": {
+        "medicine": "Antibiotics + Plenty of water",
+        "dosage": "Doctor prescription needed",
+        "advice": "See doctor today - needs antibiotics",
+        "image": "/static/images/Antibiotics (doctor prescribed).webp"
+      },
+      "moderate_pain": {
+        "medicine": "Cranberry supplements + Increased fluids + Doctor visit",
+        "dosage": "See doctor soon",
+        "advice": "Likely UTI - needs antibiotics",
+        "image": "/static/images/Cranberry supplements.webp"
+      },
+      "mild": {
+        "medicine": "Increase water intake + Cranberry juice",
+        "dosage": "2-3 liters water daily",
+        "advice": "If no improvement in 24 hours, see doctor",
+        "image": "/static/images/Cranberry juice.webp"
+      },
+      "none": {
+        "medicine": "Monitor symptoms",
+        "dosage": "Maintain hydration",
+        "advice": "May not be UTI - see doctor if other symptoms",
+        "image": "/static/images/Monitor symptoms.webp"
+      },
+      "frequent": {
+        "medicine": "Medical consultation + Antibiotics likely",
+        "dosage": "Doctor prescription",
+        "advice": "Classic UTI symptom - see doctor",
+        "image": "/static/images/Antibiotics (doctor prescribed).webp"
+      },
+      "increased": {
+        "medicine": "Increase fluids + Doctor visit",
+        "dosage": "See doctor if persists",
+        "advice": "May be UTI - get urine test",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "mild_increase": {
+        "medicine": "Hydration + Monitor",
+        "dosage": "Drink plenty water",
+        "advice": "If worsens, see doctor",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "normal": {
+        "medicine": "If other symptoms, see doctor",
+        "dosage": "Evaluation needed",
+        "advice": "May have other issue",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "abnormal": {
+        "medicine": "Urgent doctor consultation + Antibiotics",
+        "dosage": "See doctor today",
+        "advice": "Blood in urine needs immediate attention",
+        "image": "/static/images/Antibiotics (doctor prescribed).webp"
+      },
+      "dark": {
+        "medicine": "Hydration + Doctor consultation",
+        "dosage": "Increase fluids significantly",
+        "advice": "Likely dehydration, but check with doctor",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "mild_cloudy": {
+        "medicine": "Increase water + Monitor + Doctor if persists",
+        "dosage": "Hydration focus",
+        "advice": "Possible UTI developing",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "stress_prescription_logic": {
+      "work": {
+        "medicine": "Stress management techniques + Possible counseling",
+        "dosage": "Daily relaxation practice",
+        "advice": "Work-life balance, set boundaries, consider therapy",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "personal": {
+        "medicine": "Counseling + Support system",
+        "dosage": "Professional therapy recommended",
+        "advice": "Talk to therapist, family support",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "financial": {
+        "medicine": "Counseling + Financial planning",
+        "dosage": "Professional guidance",
+        "advice": "Financial advisor + stress management",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "complex": {
+        "medicine": "Professional mental health consultation",
+        "dosage": "May need medication + therapy",
+        "advice": "Comprehensive approach needed",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "headaches": {
+        "medicine": "Pain reliever + Stress management",
+        "dosage": "Ibuprofen as needed",
+        "advice": "Address root cause, relaxation techniques",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "insomnia": {
+        "medicine": "Sleep hygiene + Stress reduction",
+        "dosage": "Behavioral changes",
+        "advice": "Meditation before bed, address stressors",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "mood": {
+        "medicine": "Counseling + Exercise",
+        "dosage": "Regular therapy sessions",
+        "advice": "Physical activity, meditation, therapy",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "physical": {
+        "medicine": "Relaxation techniques + Exercise",
+        "dosage": "Daily practice",
+        "advice": "Yoga, massage, progressive muscle relaxation",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "acute": {
+        "medicine": "Immediate stress relief techniques",
+        "dosage": "As needed",
+        "advice": "Deep breathing, remove from stressor",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "recent": {
+        "medicine": "Stress management + Self-care",
+        "dosage": "Daily practice",
+        "advice": "Exercise, meditation, adequate sleep",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "chronic": {
+        "medicine": "Professional counseling + Possible medication",
+        "dosage": "Long-term management",
+        "advice": "Therapy, lifestyle changes, consider medication",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "long_term": {
+        "medicine": "Mental health professional + Comprehensive plan",
+        "dosage": "Ongoing treatment",
+        "advice": "May need medication, therapy, major life changes",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "dehydration_prescription_logic": {
+      "severe": {
+        "medicine": "Emergency care + IV fluids",
+        "dosage": "Hospital treatment",
+        "advice": "Go to ER immediately",
+        "image": "/static/images/IV fluids (hospital use).webp"
+      },
+      "moderate": {
+        "medicine": "ORS + Increased fluids",
+        "dosage": "ORS every hour",
+        "advice": "Drink frequently, see doctor if no improvement",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "mild": {
+        "medicine": "Increased water intake + ORS",
+        "dosage": "Drink 2-3 liters water",
+        "advice": "Sip frequently, avoid caffeine",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "none": {
+        "medicine": "Maintain hydration",
+        "dosage": "Regular water intake",
+        "advice": "Continue healthy hydration habits",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "hydrated": {
+        "medicine": "Maintain current intake",
+        "dosage": "Continue good habits",
+        "advice": "Keep up hydration",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "sunstroke_prescription_logic": {
+      "prolonged": {
+        "medicine": "Cool environment + ORS + Medical attention",
+        "dosage": "Immediate cooling measures",
+        "advice": "Move to shade, cool water, see doctor",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "moderate": {
+        "medicine": "Rest in cool place + Hydration",
+        "dosage": "ORS or water frequently",
+        "advice": "Cool compress, rest, monitor symptoms",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "brief": {
+        "medicine": "Hydration + Rest",
+        "dosage": "Drink plenty of fluids",
+        "advice": "Move to shade, rest",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "none": {
+        "medicine": "Preventive hydration",
+        "dosage": "Regular water intake",
+        "advice": "Stay hydrated, avoid peak sun",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "severe": {
+        "medicine": "Emergency medical care",
+        "dosage": "Call ambulance",
+        "advice": "Heat stroke - immediate hospital care needed",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "emergency": {
+        "medicine": "Emergency services + Immediate cooling",
+        "dosage": "911/Emergency",
+        "advice": "Life-threatening - cool body, call ambulance",
+        "image": "/static/images/Emergency medical attention.jpg"
+      },
+      "dehydrated": {
+        "medicine": "ORS + Medical consultation",
+        "dosage": "Frequent hydration",
+        "advice": "See doctor, may need IV fluids",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "inadequate": {
+        "medicine": "Immediate hydration + Rest",
+        "dosage": "ORS every 15 minutes",
+        "advice": "Cool place, frequent fluids",
+        "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+      },
+      "adequate": {
+        "medicine": "Rest + Continue hydration",
+        "dosage": "Maintain fluid intake",
+        "advice": "Rest in cool place, monitor",
+        "image": "/static/images/Relaxation techniques.webp"
+      }
+    },
+    "knee_pain_prescription_logic": {
+      "anterior": {
+        "medicine": "Rest + Ice + Ibuprofen",
+        "dosage": "Ibuprofen twice daily",
+        "advice": "Avoid kneeling, gentle exercises",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "posterior": {
+        "medicine": "Medical evaluation + Pain reliever",
+        "dosage": "See doctor",
+        "advice": "Could be Baker's cyst or other issue",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "medial": {
+        "medicine": "Rest + Knee support + Pain reliever",
+        "dosage": "As needed",
+        "advice": "May be ligament issue - see doctor if severe",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "lateral": {
+        "medicine": "Rest + Ice + Medical evaluation",
+        "dosage": "Doctor consultation",
+        "advice": "Possible IT band or ligament issue",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "severe_limitation": {
+        "medicine": "Medical consultation + X-ray",
+        "dosage": "See orthopedist",
+        "advice": "May need imaging and specialist care",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "stairs": {
+        "medicine": "Ibuprofen + Knee exercises",
+        "dosage": "Twice daily",
+        "advice": "Quadriceps strengthening, avoid stairs",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "flexion": {
+        "medicine": "Rest + Physical therapy",
+        "dosage": "Professional guidance",
+        "advice": "May need physiotherapy",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "constant": {
+        "medicine": "Medical evaluation urgently",
+        "dosage": "See doctor soon",
+        "advice": "Constant pain needs investigation",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "acute": {
+        "medicine": "RICE (Rest, Ice, Compression, Elevation)",
+        "dosage": "Ice 20 min every 2-3 hours",
+        "advice": "Rest knee, compression bandage",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "recent": {
+        "medicine": "Rest + Ice + Ibuprofen",
+        "dosage": "Twice daily",
+        "advice": "Avoid aggravating activities",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "subacute": {
+        "medicine": "Medical consultation + Physiotherapy",
+        "dosage": "See doctor",
+        "advice": "May need physical therapy",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "chronic": {
+        "medicine": "Orthopedist consultation",
+        "dosage": "Specialist care needed",
+        "advice": "May need MRI, long-term management",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+    "neck_pain_prescription_logic": {
+      "severe_stiffness": {
+        "medicine": "Muscle relaxant + Pain reliever",
+        "dosage": "As prescribed by doctor",
+        "advice": "See doctor - may need imaging",
+        "image": "/static/images/Muscle relaxant.webp"
+      },
+      "moderate_stiffness": {
+        "medicine": "Ibuprofen + Hot compress",
+        "dosage": "Twice daily",
+        "advice": "Gentle neck exercises, improve posture",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "mild_stiffness": {
+        "medicine": "Hot compress + Gentle stretching",
+        "dosage": "As needed",
+        "advice": "Neck exercises, posture correction",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "pain_only": {
+        "medicine": "Pain reliever + Medical evaluation",
+        "dosage": "See doctor",
+        "advice": "Pain without stiffness needs assessment",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "movement_pain": {
+        "medicine": "Rest + Muscle relaxant + Pain reliever",
+        "dosage": "As directed",
+        "advice": "Avoid neck movement, see doctor",
+        "image": "/static/images/Muscle relaxant.webp"
+      },
+      "directional_pain": {
+        "medicine": "Physical therapy + Pain relief",
+        "dosage": "Professional guidance",
+        "advice": "Physiotherapy recommended",
+        "image": "/static/images/Relaxation techniques.webp"
+      },
+      "rotation_pain": {
+        "medicine": "Ibuprofen + Neck exercises",
+        "dosage": "Twice daily",
+        "advice": "Gentle rotation exercises, heat therapy",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "static_pain": {
+        "medicine": "Medical evaluation",
+        "dosage": "See doctor",
+        "advice": "Non-movement pain needs investigation",
+        "image": "/static/images/Medical evaluation required.webp"
+      },
+      "acute": {
+        "medicine": "Ice first 24 hours, then heat + Pain reliever",
+        "dosage": "As needed",
+        "advice": "Rest, gentle movement after 24 hours",
+        "image": "/static/images/Pain reliever (general).webp"
+      },
+      "recent": {
+        "medicine": "Heat therapy + Ibuprofen",
+        "dosage": "Twice daily",
+        "advice": "Posture correction, gentle stretches",
+        "image": "/static/images/Ibuprofen 400 mg.webp"
+      },
+      "subacute": {
+        "medicine": "Physiotherapy + Pain management",
+        "dosage": "Professional care",
+        "advice": "May need physical therapy",
+        "image": "/static/images/Medical consultation recommended.webp"
+      },
+      "chronic": {
+        "medicine": "Specialist consultation + Comprehensive treatment",
+        "dosage": "Long-term management",
+        "advice": "May need imaging, ongoing physiotherapy",
+        "image": "/static/images/Medical consultation recommended.webp"
+      }
+    },
+
+    "solutions": {
+      "flu_prescription_logic": {
+        "severe": {
+          "medicine": "Paracetamol 650 mg + Rest + Fluids",
+          "dosage": "Every 6 hours, max 4 times daily",
+          "advice": "Complete bed rest, drink warm fluids, see doctor if no improvement in 48 hours",
+          "image": "/static/images/Paracetamol 650 mg.webp"
+        },
+        "moderate": {
+          "medicine": "Paracetamol 500 mg + Antihistamine",
+          "dosage": "Paracetamol every 6-8 hours, Antihistamine once daily",
+          "advice": "Rest, stay hydrated, steam inhalation 2-3 times daily",
+          "image": "/static/images/Paracetamol 500 mg.webp"
+        },
+        "mild": {
+          "medicine": "Paracetamol 500 mg + Vitamin C",
+          "dosage": "Paracetamol as needed, Vitamin C 500mg twice daily",
+          "advice": "Rest, warm fluids, avoid cold exposure",
+          "image": "/static/images/Paracetamol 500 mg.webp"
+        },
+        "none": {
+          "medicine": "Preventive measures + Vitamin C",
+          "dosage": "Vitamin C 500 mg daily",
+          "advice": "Stay warm, maintain hygiene, adequate sleep",
+          "image": "/static/images/Vitamin C.webp"
+        },
+        "high_fever": {
+          "medicine": "Paracetamol 1000 mg + Medical consultation",
+          "dosage": "Every 6 hours",
+          "advice": "See doctor immediately, complete rest, cold compress",
+          "image": "/static/images/Paracetamol 1000 mg.jpg"
+        },
+        "moderate_fever": {
+          "medicine": "Paracetamol 650 mg + ORS",
+          "dosage": "Every 6-8 hours",
+          "advice": "Stay hydrated, rest in cool room, monitor temperature",
+          "image": "/static/images/Paracetamol 650 mg.webp"
+        },
+        "mild_fever": {
+          "medicine": "Paracetamol 500 mg",
+          "dosage": "Every 6-8 hours as needed",
+          "advice": "Light diet, adequate fluids, rest",
+          "image": "/static/images/Paracetamol 500 mg.webp"
+        },
+        "no_fever": {
+          "medicine": "Symptomatic treatment + Rest",
+          "dosage": "As needed for symptoms",
+          "advice": "Focus on other symptoms, stay hydrated",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "early": {
+          "medicine": "Vitamin C + Zinc + Rest",
+          "dosage": "Vitamin C 1000mg, Zinc 50mg daily",
+          "advice": "Early intervention, plenty of fluids, complete rest",
+          "image": "/static/images/Vitamin C.webp"
+        },
+        "active": {
+          "medicine": "Paracetamol + Antihistamine + Complete rest",
+          "dosage": "Regular dosing as per severity",
+          "advice": "Stay home, avoid spreading infection, fluids",
+          "image": "/static/images/Paracetamol 500 mg.webp"
+        },
+        "prolonged": {
+          "medicine": "Medical consultation required",
+          "dosage": "Doctor evaluation needed",
+          "advice": "Flu lasting >7 days needs medical attention",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "chronic": {
+          "medicine": "Urgent medical evaluation",
+          "dosage": "Doctor consultation essential",
+          "advice": "May indicate complications or other illness",
+          "image": "/static/images/Emergency medical attention.jpg"
+        }
+      },
+      "body_pain_prescription_logic": {
+        "generalized": {
+          "medicine": "Ibuprofen 400 mg + Hot compress",
+          "dosage": "Twice daily after food",
+          "advice": "Rest, stay hydrated, may indicate viral infection",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "upper_body": {
+          "medicine": "Pain reliever gel + Oral pain medication",
+          "dosage": "Apply gel 3-4 times, oral twice daily",
+          "advice": "Posture correction, gentle stretching",
+          "image": "/static/images/Ibuprofen gel.jpg"
+        },
+        "upper_limbs": {
+          "medicine": "Ibuprofen + Rest",
+          "dosage": "Twice daily",
+          "advice": "Avoid repetitive movements, ice if swollen",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "lower_limbs": {
+          "medicine": "Pain reliever + Elevation",
+          "dosage": "As needed",
+          "advice": "Elevate legs, compression if swelling",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "mild": {
+          "medicine": "Paracetamol 500 mg + Light stretching",
+          "dosage": "As needed",
+          "advice": "Gentle exercise, stay active",
+          "image": "/static/images/Paracetamol 500 mg.webp"
+        },
+        "moderate": {
+          "medicine": "Ibuprofen 400 mg + Hot/cold therapy",
+          "dosage": "Twice daily",
+          "advice": "Alternate heat and ice, rest affected areas",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "severe": {
+          "medicine": "Strong pain reliever + Medical consultation",
+          "dosage": "As prescribed",
+          "advice": "See doctor - may need muscle relaxant",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "extreme": {
+          "medicine": "Immediate medical attention",
+          "dosage": "Emergency care",
+          "advice": "May indicate serious condition - see doctor urgently",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "acute": {
+          "medicine": "Rest + Ice + Pain reliever",
+          "dosage": "First 48 hours: ice, then heat",
+          "advice": "RICE protocol, avoid aggravating activities",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "recent": {
+          "medicine": "Ibuprofen + Hot compress",
+          "dosage": "Twice daily",
+          "advice": "Identify cause, gentle movement",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "subacute": {
+          "medicine": "Pain management + Physiotherapy",
+          "dosage": "Ongoing treatment",
+          "advice": "May need physical therapy evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "chronic": {
+          "medicine": "Specialist consultation required",
+          "dosage": "Long-term management plan",
+          "advice": "May need comprehensive workup and treatment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "muscle_strain_prescription_logic": {
+        "upper": {
+          "medicine": "Ibuprofen + Ice/Heat + Rest",
+          "dosage": "Twice daily, ice first 48 hours",
+          "advice": "Avoid overhead activities, gentle stretching after 48 hours",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "arms": {
+          "medicine": "RICE protocol + Pain reliever",
+          "dosage": "Ice 20 min every 2-3 hours",
+          "advice": "Rest arm, compression bandage, elevation",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "back": {
+          "medicine": "Muscle relaxant + Ibuprofen + Heat",
+          "dosage": "As prescribed, heat after 48 hours",
+          "advice": "Bed rest initially, then gradual mobilization",
+          "image": "/static/images/Muscle relaxant.webp"
+        },
+        "legs": {
+          "medicine": "RICE + Ibuprofen + Elevation",
+          "dosage": "Regular icing, pain relief as needed",
+          "advice": "Avoid weight bearing initially, compression wrap",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "exercise": {
+          "medicine": "Ice + Rest + Ibuprofen",
+          "dosage": "Ice immediately, pain relief as needed",
+          "advice": "Stop activity, rest 48-72 hours before resuming",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "lifting": {
+          "medicine": "Rest + Ice + Muscle relaxant",
+          "dosage": "First 48 hours critical",
+          "advice": "Avoid lifting, proper rest, see doctor if severe",
+          "image": "/static/images/Muscle relaxant.webp"
+        },
+        "sudden": {
+          "medicine": "Immediate ice + Rest + Pain relief",
+          "dosage": "Ice every 2-3 hours for 48 hours",
+          "advice": "Complete rest, compression, elevation",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "gradual": {
+          "medicine": "Heat therapy + Pain reliever + Stretching",
+          "dosage": "Heat before activity, pain relief as needed",
+          "advice": "Identify overuse cause, reduce activity",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "mild": {
+          "medicine": "Rest + Gentle stretching",
+          "dosage": "Light pain relief if needed",
+          "advice": "Continue light activity, avoid strain",
+          "image": "/static/images/Paracetamol 500 mg.webp"
+        },
+        "moderate": {
+          "medicine": "RICE + Ibuprofen + Compression",
+          "dosage": "Twice daily for 3-5 days",
+          "advice": "Limited activity, gradual return to normal",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "severe": {
+          "medicine": "Medical evaluation + Strong pain relief",
+          "dosage": "Doctor consultation needed",
+          "advice": "May need imaging, possible tear - see doctor",
+          "image": "/static/images/Medical evaluation required.webp"
+        }
+      },
+      "burn_injury_prescription_logic": {
+        "scald": {
+          "medicine": "Cool water + Silver sulfadiazine cream + Pain relief",
+          "dosage": "Cool immediately, apply cream twice daily",
+          "advice": "Run under cool water 10-20 min, cover with sterile dressing",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "flame": {
+          "medicine": "Emergency care + Burn dressing",
+          "dosage": "Immediate medical attention",
+          "advice": "Remove from source, cool, cover, seek medical help",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "contact": {
+          "medicine": "Cool water + Antibiotic ointment + Dressing",
+          "dosage": "Cool 10-20 min, apply ointment twice daily",
+          "advice": "Clean gently, protect area, monitor for infection",
+          "image": "/static/images/Antibiotic ointment.webp"
+        },
+        "special": {
+          "medicine": "Emergency medical care immediately",
+          "dosage": "Specialized burn treatment needed",
+          "advice": "Chemical/electrical burns need urgent hospital care",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "hand": {
+          "medicine": "Medical consultation + Specialized dressing",
+          "dosage": "Professional care recommended",
+          "advice": "Hand burns need expert care to prevent scarring",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "limb": {
+          "medicine": "Cool + Dress + Pain relief + Medical check",
+          "dosage": "As directed by doctor",
+          "advice": "Elevate limb, keep clean, see doctor for proper care",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "face": {
+          "medicine": "Immediate medical attention",
+          "dosage": "Emergency care",
+          "advice": "Face burns need urgent medical care - go to ER",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "trunk": {
+          "medicine": "Medical evaluation + Burn care",
+          "dosage": "Professional treatment",
+          "advice": "Large area burns need medical attention",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "first_degree": {
+          "medicine": "Cool water + Aloe vera + Pain relief",
+          "dosage": "Cool 10-20 min, aloe 3-4 times daily",
+          "advice": "Keep moisturized, avoid sun, usually heals in 3-7 days",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "second_degree": {
+          "medicine": "Medical consultation + Silver sulfadiazine + Dressing",
+          "dosage": "Apply cream twice daily, change dressing daily",
+          "advice": "See doctor, keep clean, watch for infection signs",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "third_degree": {
+          "medicine": "Emergency hospital care immediately",
+          "dosage": "Specialized burn unit treatment",
+          "advice": "Call ambulance - needs urgent specialized care",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "superficial": {
+          "medicine": "Cool water + Moisturizer + Light dressing",
+          "dosage": "Keep moist and protected",
+          "advice": "Usually heals without scarring in few days",
+          "image": "/static/images/Pain reliever (general).webp"
+        }
+      },
+      "wound_prescription_logic": {
+        "scratch": {
+          "medicine": "Clean with antiseptic + Antibiotic ointment",
+          "dosage": "Clean once, apply ointment twice daily",
+          "advice": "Keep clean and dry, cover if needed",
+          "image": "/static/images/Antibiotic ointment.webp"
+        },
+        "cut": {
+          "medicine": "Clean + Antiseptic + Butterfly strips/bandage",
+          "dosage": "Clean immediately, change dressing daily",
+          "advice": "Apply pressure if bleeding, elevate, keep clean",
+          "image": "/static/images/Antibiotic ointment.webp"
+        },
+        "deep": {
+          "medicine": "Medical attention + Possible stitches",
+          "dosage": "Professional care needed",
+          "advice": "Deep cuts need medical evaluation - may need sutures",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "puncture": {
+          "medicine": "Medical consultation + Tetanus check + Antibiotics",
+          "dosage": "See doctor same day",
+          "advice": "High infection risk - needs professional cleaning",
+          "image": "/static/images/Antibiotics (doctor prescribed).webp"
+        },
+        "severe_bleeding": {
+          "medicine": "Emergency care immediately",
+          "dosage": "Call ambulance",
+          "advice": "Apply firm pressure, elevate, don't remove embedded objects",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "moderate_bleeding": {
+          "medicine": "Pressure + Elevation + Medical check",
+          "dosage": "Apply pressure 10-15 minutes",
+          "advice": "If doesn't stop, seek medical help",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "stopped": {
+          "medicine": "Clean + Antiseptic + Bandage",
+          "dosage": "Clean gently, apply antibiotic ointment",
+          "advice": "Keep clean and covered, change dressing daily",
+          "image": "/static/images/Antibiotic ointment.webp"
+        },
+        "no_bleeding": {
+          "medicine": "Clean + Antiseptic protection",
+          "dosage": "Clean and monitor",
+          "advice": "Still needs proper cleaning and care",
+          "image": "/static/images/Antibiotic ointment.webp"
+        },
+        "sharp": {
+          "medicine": "Clean carefully + Medical evaluation",
+          "dosage": "Professional care recommended",
+          "advice": "Sharp object wounds need medical check - tetanus update",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "trauma": {
+          "medicine": "Emergency evaluation + Wound care",
+          "dosage": "Immediate medical attention",
+          "advice": "Traumatic wounds need professional assessment",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "bite": {
+          "medicine": "Urgent medical care + Antibiotics + Rabies check",
+          "dosage": "See doctor immediately",
+          "advice": "All bites need medical evaluation - infection risk high",
+          "image": "/static/images/Antibiotics (doctor prescribed).webp"
+        },
+        "other": {
+          "medicine": "Clean + Antiseptic + Medical check if unsure",
+          "dosage": "Basic wound care",
+          "advice": "Monitor for infection signs, see doctor if concerns",
+          "image": "/static/images/Antibiotic ointment.webp"
+        }
+      },
+      "sprain_prescription_logic": {
+        "ankle": {
+          "medicine": "RICE protocol + Ibuprofen + Ankle support",
+          "dosage": "Ice 20 min every 2-3 hours, Ibuprofen twice daily",
+          "advice": "Rest, compression wrap, elevate, avoid weight bearing 48 hours",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "wrist": {
+          "medicine": "RICE + Wrist brace + Pain relief",
+          "dosage": "Ice regularly first 48 hours",
+          "advice": "Immobilize with brace, avoid use, elevate",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "knee": {
+          "medicine": "RICE + Knee support + Medical check",
+          "dosage": "Ice and compression critical",
+          "advice": "May need imaging - see doctor if severe or unstable",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "other": {
+          "medicine": "RICE protocol + Pain relief",
+          "dosage": "Standard sprain care",
+          "advice": "Ice, compression, rest, elevate affected joint",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "severe_swelling": {
+          "medicine": "Medical evaluation + RICE + Possible X-ray",
+          "dosage": "Urgent care needed",
+          "advice": "Severe swelling may indicate fracture - see doctor",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "moderate_swelling": {
+          "medicine": "RICE + Ibuprofen + Compression",
+          "dosage": "Strict rest and ice protocol",
+          "advice": "Compression wrap, elevate above heart, ice regularly",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "mild_swelling": {
+          "medicine": "Ice + Compression + Light activity restriction",
+          "dosage": "As needed",
+          "advice": "RICE protocol, gradual return to activity",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "no_swelling": {
+          "medicine": "Rest + Support + Monitor",
+          "dosage": "Preventive care",
+          "advice": "Still needs rest, support joint, watch for delayed swelling",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "immobile": {
+          "medicine": "Emergency medical care",
+          "dosage": "Immediate evaluation",
+          "advice": "Complete immobility suggests severe injury - ER visit",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "severe_pain": {
+          "medicine": "Medical evaluation + Strong pain relief + Immobilization",
+          "dosage": "Doctor consultation needed",
+          "advice": "Severe pain needs professional assessment",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "restricted": {
+          "medicine": "RICE + Ibuprofen + Support brace",
+          "dosage": "Twice daily pain relief",
+          "advice": "Immobilize joint, see doctor if no improvement in 3 days",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "mobile": {
+          "medicine": "RICE + Pain relief as needed",
+          "dosage": "Light treatment",
+          "advice": "Gentle movement okay, avoid full activity for few days",
+          "image": "/static/images/Pain reliever (general).webp"
+        }
+      },
+      "dizziness_prescription_logic": {
+        "vertigo": {
+          "medicine": "Anti-vertigo medication + Medical consultation",
+          "dosage": "As prescribed by doctor",
+          "advice": "Avoid sudden movements, stay safe, see ENT specialist",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "presyncope": {
+          "medicine": "Lie down immediately + Fluids + Medical check",
+          "dosage": "Emergency if persistent",
+          "advice": "Feeling faint needs medical evaluation - check heart/BP",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "disequilibrium": {
+          "medicine": "Medical evaluation + Balance assessment",
+          "dosage": "Doctor consultation",
+          "advice": "Balance issues need neurological check",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "general": {
+          "medicine": "Rest + Hydration + Medical check",
+          "dosage": "Monitor symptoms",
+          "advice": "Lie down, drink fluids, see doctor if persists",
+          "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+        },
+        "postural": {
+          "medicine": "Increase fluids + Salt intake + Rise slowly",
+          "dosage": "Lifestyle changes",
+          "advice": "Stand up slowly, sit on edge of bed first, stay hydrated",
+          "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+        },
+        "positional": {
+          "medicine": "Medical evaluation + Possible Epley maneuver",
+          "dosage": "Doctor or physiotherapist",
+          "advice": "May be BPPV - needs specific treatment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "constant": {
+          "medicine": "Urgent medical evaluation",
+          "dosage": "See doctor today",
+          "advice": "Constant dizziness needs immediate assessment",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "movement": {
+          "medicine": "Anti-vertigo medication + Avoid triggers",
+          "dosage": "As prescribed",
+          "advice": "Move slowly, avoid sudden head movements",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "brief": {
+          "medicine": "Rest + Hydration + Monitor",
+          "dosage": "Supportive care",
+          "advice": "Usually benign, but see doctor if recurrent",
+          "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+        },
+        "short": {
+          "medicine": "Check blood pressure + Hydration",
+          "dosage": "Monitor and track episodes",
+          "advice": "Note triggers, see doctor if frequent",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "prolonged": {
+          "medicine": "Medical evaluation urgently",
+          "dosage": "Doctor consultation needed",
+          "advice": "Episodes lasting hours need investigation",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "persistent": {
+          "medicine": "Comprehensive medical workup",
+          "dosage": "Specialist referral",
+          "advice": "Ongoing dizziness needs ENT/neurologist evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "hypertension_prescription_logic": {
+        "high": {
+          "medicine": "Emergency medical attention + Antihypertensive",
+          "dosage": "Immediate doctor consultation",
+          "advice": "Very high BP dangerous - go to ER or doctor today",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "elevated": {
+          "medicine": "Lifestyle changes + Medical consultation",
+          "dosage": "Doctor evaluation for medication",
+          "advice": "Reduce salt, exercise, lose weight, manage stress",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "normal": {
+          "medicine": "No medication needed",
+          "dosage": "Preventive measures",
+          "advice": "Maintain healthy lifestyle, regular monitoring",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "unknown": {
+          "medicine": "Blood pressure check + Doctor consultation",
+          "dosage": "Get BP measured",
+          "advice": "Need proper BP reading to assess situation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "headache": {
+          "medicine": "BP control medication + Pain relief",
+          "dosage": "As prescribed by doctor",
+          "advice": "High BP with headache needs immediate medical attention",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "breathless": {
+          "medicine": "Emergency care + BP medication",
+          "dosage": "Urgent medical attention",
+          "advice": "Breathlessness with high BP - go to ER immediately",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "chest": {
+          "medicine": "Emergency - Call ambulance",
+          "dosage": "Immediate hospital care",
+          "advice": "Chest pain with high BP - heart attack risk - ER now",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "asymptomatic": {
+          "medicine": "Doctor consultation for medication",
+          "dosage": "Regular BP monitoring",
+          "advice": "Silent high BP still damages organs - needs treatment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "acute": {
+          "medicine": "Emergency medical care",
+          "dosage": "Immediate treatment",
+          "advice": "Sudden high BP spike - go to ER",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "recent": {
+          "medicine": "Medical consultation + Lifestyle changes",
+          "dosage": "Doctor evaluation needed",
+          "advice": "New high BP needs proper assessment and treatment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "chronic": {
+          "medicine": "Antihypertensive medication + Regular monitoring",
+          "dosage": "As prescribed, daily medication",
+          "advice": "Long-term management needed, regular doctor visits",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "new": {
+          "medicine": "Comprehensive evaluation + Treatment plan",
+          "dosage": "Doctor consultation",
+          "advice": "New diagnosis needs baseline tests and medication plan",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "low_blood_pressure_prescription_logic": {
+        "severe": {
+          "medicine": "Emergency care + IV fluids possibly",
+          "dosage": "Immediate medical attention",
+          "advice": "Dangerously low BP - go to ER immediately",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "moderate": {
+          "medicine": "Increase fluids + Salt + Medical check",
+          "dosage": "Doctor consultation",
+          "advice": "Drink more water, add salt to diet, see doctor",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "mild": {
+          "medicine": "Hydration + Salt + Rise slowly",
+          "dosage": "Lifestyle changes",
+          "advice": "Drink 8-10 glasses water, adequate salt, stand slowly",
+          "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+        },
+        "asymptomatic": {
+          "medicine": "Monitor + Maintain healthy habits",
+          "dosage": "No treatment needed if no symptoms",
+          "advice": "Low BP without symptoms usually not concerning",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "low": {
+          "medicine": "Medical evaluation + Treatment if symptomatic",
+          "dosage": "Doctor consultation",
+          "advice": "Determine cause, may need medication adjustment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "borderline": {
+          "medicine": "Lifestyle optimization + Monitoring",
+          "dosage": "Preventive approach",
+          "advice": "Stay hydrated, adequate salt, compression stockings",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "normal": {
+          "medicine": "No intervention needed",
+          "dosage": "Maintain current status",
+          "advice": "Continue healthy habits",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "unknown": {
+          "medicine": "Blood pressure check needed",
+          "dosage": "Get BP measured",
+          "advice": "Proper reading needed for assessment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "fasting": {
+          "medicine": "Eat regular meals + Hydration",
+          "dosage": "Don't skip meals",
+          "advice": "Small frequent meals, stay hydrated",
+          "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+        },
+        "dehydration": {
+          "medicine": "ORS + Increased fluids",
+          "dosage": "Drink frequently",
+          "advice": "Rehydrate properly, may need IV if severe",
+          "image": "/static/images/ORS (Oral Rehydration Solution).webp"
+        },
+        "stress": {
+          "medicine": "Stress management + Proper nutrition",
+          "dosage": "Rest and recovery",
+          "advice": "Address stress, eat well, adequate sleep",
+          "image": "/static/images/Relaxation techniques.webp"
+        },
+        "spontaneous": {
+          "medicine": "Medical evaluation needed",
+          "dosage": "Doctor consultation",
+          "advice": "Unexplained low BP needs investigation",
+          "image": "/static/images/Medical evaluation required.webp"
+        }
+      },
+      "diabetes_symptoms_prescription_logic": {
+        "severe": {
+          "medicine": "Emergency medical care + Insulin management",
+          "dosage": "Immediate doctor consultation",
+          "advice": "Severe symptoms need urgent evaluation - possible DKA",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "moderate": {
+          "medicine": "Medical consultation + Blood sugar monitoring",
+          "dosage": "Doctor evaluation essential",
+          "advice": "Need diabetes testing and management plan",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "mild": {
+          "medicine": "Blood sugar testing + Lifestyle changes",
+          "dosage": "Doctor consultation recommended",
+          "advice": "Get tested for diabetes, diet and exercise important",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "normal": {
+          "medicine": "Preventive screening if risk factors",
+          "dosage": "Regular health checks",
+          "advice": "Maintain healthy weight, exercise, balanced diet",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "sciatica_prescription_logic": {
+        "localized": {
+          "medicine": "Ibuprofen + Hot/cold therapy + Stretching",
+          "dosage": "Twice daily, alternate ice and heat",
+          "advice": "Gentle stretches, avoid prolonged sitting, see doctor if worsens",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "unilateral": {
+          "medicine": "Pain reliever + Physiotherapy + Nerve medication",
+          "dosage": "As prescribed by doctor",
+          "advice": "One-sided sciatica common, needs proper treatment",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "bilateral": {
+          "medicine": "Urgent medical evaluation",
+          "dosage": "See doctor immediately",
+          "advice": "Both legs affected - may indicate serious condition",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "complete": {
+          "medicine": "Emergency care + Possible surgery consultation",
+          "dosage": "Immediate medical attention",
+          "advice": "Complete nerve involvement - needs urgent evaluation",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "mild": {
+          "medicine": "Ibuprofen + Gentle exercise + Heat",
+          "dosage": "As needed",
+          "advice": "Stay active, avoid bed rest, stretching exercises",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "moderate": {
+          "medicine": "Stronger pain relief + Physiotherapy",
+          "dosage": "Doctor consultation needed",
+          "advice": "May need nerve pain medication, physical therapy",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "severe": {
+          "medicine": "Medical consultation + Nerve pain medication + Possible imaging",
+          "dosage": "Specialist care needed",
+          "advice": "May need MRI, steroid injections, or surgery evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "weakness": {
+          "medicine": "Emergency medical evaluation",
+          "dosage": "See doctor urgently",
+          "advice": "Leg weakness with sciatica - needs immediate assessment",
+          "image": "/static/images/Emergency medical attention.jpg"
+        },
+        "acute": {
+          "medicine": "Rest + Ice + Pain reliever + Anti-inflammatory",
+          "dosage": "First 48 hours critical",
+          "advice": "Ice first 48 hours, then heat, gentle movement",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "recent": {
+          "medicine": "Ibuprofen + Physiotherapy evaluation",
+          "dosage": "Twice daily",
+          "advice": "Early treatment important, avoid prolonged sitting",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "subacute": {
+          "medicine": "Pain management + Physiotherapy + Exercises",
+          "dosage": "Ongoing treatment",
+          "advice": "Structured exercise program, may need specialist",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "chronic": {
+          "medicine": "Multidisciplinary approach + Pain specialist",
+          "dosage": "Long-term management",
+          "advice": "May need injections, surgery consultation, pain management",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "chest_congestion_prescription_logic": {
+        "severe": {
+          "medicine": "Medical consultation + Possible antibiotics",
+          "dosage": "Doctor evaluation needed",
+          "advice": "Severe congestion may indicate infection - see doctor",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "thick_mucus": {
+          "medicine": "Expectorant + Steam inhalation + Fluids",
+          "dosage": "Guaifenesin as directed, steam 3-4 times daily",
+          "advice": "Drink warm fluids, humidify air, see doctor if persists",
+          "image": "/static/images/Expectorant (Guaifenesin).webp"
+        },
+        "moderate": {
+          "medicine": "Expectorant + Steam + Warm fluids",
+          "dosage": "As per package instructions",
+          "advice": "Steam inhalation 3 times daily, stay hydrated",
+          "image": "/static/images/Expectorant (Guaifenesin).webp"
+        },
+        "mild": {
+          "medicine": "Steam inhalation + Warm fluids",
+          "dosage": "Non-medication approach first",
+          "advice": "Humidify room, drink warm water, rest",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "productive": {
+          "medicine": "Expectorant + Hydration",
+          "dosage": "Help bring up mucus",
+          "advice": "Don't suppress cough, stay hydrated",
+          "image": "/static/images/Expectorant (Guaifenesin).webp"
+        },
+        "dry": {
+          "medicine": "Humidifier + Fluids + Honey",
+          "dosage": "Environmental changes",
+          "advice": "Increase humidity, warm liquids with honey",
+          "image": "/static/images/Honey-based cough syrup.webp"
+        },
+        "occasional": {
+          "medicine": "Steam as needed + Monitor",
+          "dosage": "Supportive care",
+          "advice": "Usually resolves on its own, stay hydrated",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "no_cough": {
+          "medicine": "Medical evaluation",
+          "dosage": "Doctor consultation",
+          "advice": "Congestion without cough unusual - needs check",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "acute": {
+          "medicine": "Steam + Expectorant + Rest",
+          "dosage": "Regular steam sessions",
+          "advice": "Usually viral, supportive care, see doctor if worsens",
+          "image": "/static/images/Expectorant (Guaifenesin).webp"
+        },
+        "recent": {
+          "medicine": "Steam inhalation + Fluids + Monitor",
+          "dosage": "3-4 times daily",
+          "advice": "Track symptoms, see doctor if no improvement in 7 days",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "prolonged": {
+          "medicine": "Medical consultation + Possible antibiotics",
+          "dosage": "Doctor evaluation needed",
+          "advice": "Prolonged congestion needs investigation",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "chronic": {
+          "medicine": "Specialist consultation + Comprehensive treatment",
+          "dosage": "Long-term management",
+          "advice": "May need pulmonologist, allergy testing, imaging",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "cold_sores_prescription_logic": {
+        "lips": {
+          "medicine": "Antiviral cream (Acyclovir) + Pain relief",
+          "dosage": "Apply cream 5 times daily for 5 days",
+          "advice": "Start at first tingle, avoid touching, don't share items",
+          "image": "/static/images/Antiviral cream.webp"
+        },
+        "mouth": {
+          "medicine": "Antiviral + Mouth rinse + Pain relief",
+          "dosage": "As prescribed, rinse 3-4 times daily",
+          "advice": "Avoid acidic foods, stay hydrated, see doctor",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "perioral": {
+          "medicine": "Antiviral cream + Keep area clean",
+          "dosage": "Apply as directed",
+          "advice": "Don't touch or pick, wash hands frequently",
+          "image": "/static/images/Antiviral cream.webp"
+        },
+        "multiple": {
+          "medicine": "Oral antiviral medication + Doctor consultation",
+          "dosage": "Prescription needed",
+          "advice": "Multiple sores may need systemic treatment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "severe_pain": {
+          "medicine": "Antiviral + Pain reliever + Topical anesthetic",
+          "dosage": "As prescribed",
+          "advice": "See doctor - may need stronger medication",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "burning": {
+          "medicine": "Start antiviral immediately + Ice",
+          "dosage": "Apply at first sign",
+          "advice": "Early treatment key, ice can help, avoid sun",
+          "image": "/static/images/Antiviral cream.webp"
+        },
+        "tingling": {
+          "medicine": "Antiviral cream immediately",
+          "dosage": "Start at tingling stage",
+          "advice": "Best results if started early, may prevent full outbreak",
+          "image": "/static/images/Antiviral cream.webp"
+        },
+        "painless": {
+          "medicine": "Antiviral cream + Monitor",
+          "dosage": "Standard treatment",
+          "advice": "Still contagious, avoid contact with others",
+          "image": "/static/images/Antiviral cream.webp"
+        },
+        "new": {
+          "medicine": "Antiviral cream + Doctor consultation if first episode",
+          "dosage": "Start immediately",
+          "advice": "First outbreak may need medical evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "early": {
+          "medicine": "Antiviral cream immediately",
+          "dosage": "5 times daily",
+          "advice": "Most effective when started early, ice helps",
+          "image": "/static/images/Antiviral cream.webp"
+        },
+        "active": {
+          "medicine": "Continue antiviral + Keep clean + Pain relief",
+          "dosage": "Complete treatment course",
+          "advice": "Avoid touching, don't share items, highly contagious",
+          "image": "/static/images/Antiviral cream.webp"
+        },
+        "prolonged": {
+          "medicine": "Medical consultation + Oral antiviral possibly",
+          "dosage": "Doctor evaluation",
+          "advice": "Sores lasting >2 weeks need medical attention",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "motion_sickness_prescription_logic": {
+        "severe": {
+          "medicine": "Antihistamine (Dramamine) + Rest",
+          "dosage": "Take 30-60 min before travel",
+          "advice": "Avoid travel if possible, see doctor for prescription options",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "moderate": {
+          "medicine": "Antihistamine + Ginger",
+          "dosage": "Before travel, can repeat",
+          "advice": "Look at horizon, fresh air, avoid reading",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "mild": {
+          "medicine": "Ginger supplements/tea + Peppermint",
+          "dosage": "Before and during travel",
+          "advice": "Sit in front, look forward, fresh air",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "discomfort": {
+          "medicine": "Natural remedies + Behavioral techniques",
+          "dosage": "As needed",
+          "advice": "Acupressure wristbands, avoid heavy meals before travel",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "car": {
+          "medicine": "Antihistamine + Sit in front",
+          "dosage": "30 min before travel",
+          "advice": "Driver's seat or front passenger, look forward",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "bus": {
+          "medicine": "Antihistamine + Window seat",
+          "dosage": "Before boarding",
+          "advice": "Sit over front wheels, look out window",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "train": {
+          "medicine": "Antihistamine + Face forward seat",
+          "dosage": "Before journey",
+          "advice": "Sit facing direction of travel, avoid reading",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "all": {
+          "medicine": "Prescription motion sickness medication",
+          "dosage": "Doctor consultation",
+          "advice": "Severe motion sickness needs medical management",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "always": {
+          "medicine": "Doctor consultation + Prescription medication",
+          "dosage": "Long-term management plan",
+          "advice": "May need scopolamine patch or other prescription",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "frequent": {
+          "medicine": "Regular antihistamine + Behavioral techniques",
+          "dosage": "Before each trip",
+          "advice": "Develop coping strategies, consider desensitization",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "occasional": {
+          "medicine": "Antihistamine as needed",
+          "dosage": "When anticipating trigger",
+          "advice": "Keep medication handy for when needed",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "rare": {
+          "medicine": "Natural remedies first + Antihistamine backup",
+          "dosage": "As needed",
+          "advice": "Ginger, acupressure, behavioral techniques usually sufficient",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "itchy_scalp_prescription_logic": {
+        "severe_dandruff": {
+          "medicine": "Medicated shampoo (Ketoconazole 2%) + Scalp treatment",
+          "dosage": "Twice weekly, leave on 5 minutes",
+          "advice": "See doctor if no improvement, may need prescription",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "moderate_dandruff": {
+          "medicine": "Anti-dandruff shampoo (Zinc pyrithione or Selenium sulfide)",
+          "dosage": "3 times weekly",
+          "advice": "Massage well, leave on few minutes, rinse thoroughly",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "mild_dandruff": {
+          "medicine": "Mild anti-dandruff shampoo",
+          "dosage": "2-3 times weekly",
+          "advice": "Regular washing, avoid harsh products",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "no_flakes": {
+          "medicine": "Soothing shampoo + Scalp oil",
+          "dosage": "As needed",
+          "advice": "May be dry scalp or sensitivity - moisturize",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "severe": {
+          "medicine": "Medical consultation + Prescription treatment",
+          "dosage": "Doctor evaluation",
+          "advice": "Severe itching may be scalp condition needing treatment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "moderate": {
+          "medicine": "Anti-dandruff shampoo + Avoid scratching",
+          "dosage": "Regular use",
+          "advice": "Don't scratch, may worsen, keep nails short",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "mild": {
+          "medicine": "Gentle shampoo + Scalp massage",
+          "dosage": "Regular washing",
+          "advice": "May resolve with proper hair care routine",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "minimal": {
+          "medicine": "Maintain good hair hygiene",
+          "dosage": "Regular washing",
+          "advice": "Monitor, may not need treatment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "product_related": {
+          "medicine": "Stop suspected product + Gentle shampoo",
+          "dosage": "Switch products",
+          "advice": "Identify and avoid trigger product",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "oil_related": {
+          "medicine": "Clarifying shampoo + Regular washing",
+          "dosage": "More frequent washing",
+          "advice": "May need to wash more often, use oil-control shampoo",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "weather_related": {
+          "medicine": "Moisturizing treatments + Seasonal adjustment",
+          "dosage": "Adjust to season",
+          "advice": "Humidifier in winter, lighter products in summer",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "unknown": {
+          "medicine": "Trial anti-dandruff shampoo + Doctor if persists",
+          "dosage": "2-3 weeks trial",
+          "advice": "See dermatologist if no improvement",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "hair_fall_prescription_logic": {
+        "heavy": {
+          "medicine": "Medical consultation + Blood tests + Minoxidil possibly",
+          "dosage": "Doctor evaluation essential",
+          "advice": "Severe hair loss needs investigation - check thyroid, iron, hormones",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "moderate": {
+          "medicine": "Multivitamin + Biotin + Gentle hair care",
+          "dosage": "Daily supplements",
+          "advice": "See doctor for evaluation, reduce heat styling, gentle handling",
+          "image": "/static/images/Multivitamin supplement.webp"
+        },
+        "mild": {
+          "medicine": "Biotin + Iron + Protein-rich diet",
+          "dosage": "Daily supplements",
+          "advice": "Improve nutrition, gentle hair care, avoid tight hairstyles",
+          "image": "/static/images/Multivitamin supplement.webp"
+        },
+        "severe": {
+          "medicine": "Urgent dermatologist consultation",
+          "dosage": "Specialist care needed",
+          "advice": "May need prescription treatments like finasteride, minoxidil",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "recent": {
+          "medicine": "Blood tests + Supplements",
+          "dosage": "Doctor consultation",
+          "advice": "Recent onset needs evaluation for underlying cause",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "subacute": {
+          "medicine": "Medical evaluation + Nutritional support",
+          "dosage": "Doctor consultation",
+          "advice": "Ongoing hair loss needs proper diagnosis",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "prolonged": {
+          "medicine": "Dermatologist + Comprehensive treatment",
+          "dosage": "Specialist care",
+          "advice": "Long-term hair loss may need prescription treatments",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "chronic": {
+          "medicine": "Specialist + Long-term management plan",
+          "dosage": "Ongoing treatment",
+          "advice": "May need minoxidil, finasteride, or other prescription treatments",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "stress_related": {
+          "medicine": "Stress management + Supplements",
+          "dosage": "Daily routine",
+          "advice": "Address stress, adequate sleep, meditation, nutritional support",
+          "image": "/static/images/Relaxation techniques.webp"
+        },
+        "seasonal": {
+          "medicine": "Nutritional support + Gentle care",
+          "dosage": "During affected season",
+          "advice": "Common in fall, usually temporary, maintain good nutrition",
+          "image": "/static/images/Multivitamin supplement.webp"
+        },
+        "illness_related": {
+          "medicine": "Treat underlying illness + Nutritional support",
+          "dosage": "Address primary condition",
+          "advice": "Hair usually recovers after illness resolves",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "unknown": {
+          "medicine": "Medical evaluation + Blood tests",
+          "dosage": "Doctor consultation",
+          "advice": "Need to identify cause - thyroid, iron, hormones, stress",
+          "image": "/static/images/Medical evaluation required.webp"
+        }
+      },
+      "gas_prescription_logic": {
+        "bloating": {
+          "medicine": "Simethicone + Digestive enzyme",
+          "dosage": "After meals as needed",
+          "advice": "Eat slowly, avoid carbonated drinks, walk after eating",
+          "image": "/static/images/Simethicone.webp"
+        },
+        "burping": {
+          "medicine": "Antacid + Avoid gas-producing foods",
+          "dosage": "After meals if needed",
+          "advice": "Eat slowly, don't gulp air, avoid carbonated beverages",
+          "image": "/static/images/Antacid (Calcium carbonate).webp"
+        },
+        "pressure": {
+          "medicine": "Simethicone + Gentle movement",
+          "dosage": "As needed",
+          "advice": "Walk, gentle yoga poses, warm compress on abdomen",
+          "image": "/static/images/Simethicone.webp"
+        },
+        "multiple": {
+          "medicine": "Digestive enzyme + Simethicone + Diet modification",
+          "dosage": "With meals",
+          "advice": "Identify trigger foods, eat smaller meals, chew thoroughly",
+          "image": "/static/images/Digestive enzyme.webp"
+        },
+        "spicy": {
+          "medicine": "Digestive enzyme + Antacid",
+          "dosage": "After meals",
+          "advice": "Avoid spicy foods for few days, smaller portions",
+          "image": "/static/images/Digestive enzyme.webp"
+        },
+        "oily": {
+          "medicine": "Digestive enzyme + Light diet",
+          "dosage": "With meals",
+          "advice": "Avoid fried foods, smaller portions, stay upright after eating",
+          "image": "/static/images/Digestive enzyme.webp"
+        },
+        "heavy": {
+          "medicine": "Digestive enzyme + Simethicone + Walk",
+          "dosage": "After meals",
+          "advice": "Smaller portions, eat slowly, walk after eating",
+          "image": "/static/images/Digestive enzyme.webp"
+        },
+        "gas_foods": {
+          "medicine": "Simethicone + Avoid trigger foods",
+          "dosage": "As needed",
+          "advice": "Identify and limit beans, cabbage, onions, carbonated drinks",
+          "image": "/static/images/Simethicone.webp"
+        },
+        "acute": {
+          "medicine": "Simethicone + Movement",
+          "dosage": "Immediate relief",
+          "advice": "Walk, gentle stretches, warm compress",
+          "image": "/static/images/Simethicone.webp"
+        },
+        "recent": {
+          "medicine": "Digestive enzyme + Diet review",
+          "dosage": "With meals",
+          "advice": "Track foods, eat slowly, stay hydrated",
+          "image": "/static/images/Digestive enzyme.webp"
+        },
+        "today": {
+          "medicine": "Simethicone + Rest + Light foods",
+          "dosage": "As needed",
+          "advice": "Light meals today, avoid trigger foods",
+          "image": "/static/images/Simethicone.webp"
+        },
+        "chronic": {
+          "medicine": "Medical consultation + Dietary changes",
+          "dosage": "Doctor evaluation",
+          "advice": "Persistent gas may indicate IBS or food intolerance - see doctor",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "shoulder_pain_prescription_logic": {
+        "frozen": {
+          "medicine": "Physiotherapy + Pain relief + Heat therapy",
+          "dosage": "Doctor consultation for treatment plan",
+          "advice": "Frozen shoulder needs dedicated physiotherapy program",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "restricted": {
+          "medicine": "Ibuprofen + Physiotherapy + Exercises",
+          "dosage": "Twice daily, regular exercises",
+          "advice": "Range of motion exercises essential, may need specialist",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "selective": {
+          "medicine": "Pain relief + Targeted exercises",
+          "dosage": "As needed",
+          "advice": "Specific movements painful may indicate rotator cuff issue",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "mobile_pain": {
+          "medicine": "Ibuprofen + Rest + Ice/heat",
+          "dosage": "Twice daily",
+          "advice": "Avoid aggravating movements, gentle stretches",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "sharp": {
+          "medicine": "Medical evaluation + Pain relief",
+          "dosage": "See doctor",
+          "advice": "Sharp pain may indicate tear or impingement - needs assessment",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "burning": {
+          "medicine": "Medical consultation + Possible nerve evaluation",
+          "dosage": "Doctor assessment",
+          "advice": "Burning pain may be nerve-related - needs evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "dull": {
+          "medicine": "Ibuprofen + Heat + Gentle exercises",
+          "dosage": "Twice daily",
+          "advice": "Often muscular, improve posture, regular stretching",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "throbbing": {
+          "medicine": "Pain reliever + Ice + Rest",
+          "dosage": "As needed",
+          "advice": "May indicate inflammation - rest and ice first 48 hours",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "acute": {
+          "medicine": "RICE + Ibuprofen + Sling if needed",
+          "dosage": "Ice first 48 hours",
+          "advice": "Rest shoulder, ice regularly, avoid overhead activities",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "recent": {
+          "medicine": "Ibuprofen + Ice/Heat + Light activity restriction",
+          "dosage": "Twice daily",
+          "advice": "Avoid aggravating activities, gentle movement important",
+          "image": "/static/images/Ibuprofen 400 mg.webp"
+        },
+        "subacute": {
+          "medicine": "Physiotherapy + Pain management",
+          "dosage": "Ongoing treatment",
+          "advice": "Structured rehabilitation program needed",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "chronic": {
+          "medicine": "Specialist consultation + Comprehensive management",
+          "dosage": "Long-term plan",
+          "advice": "May need imaging, injections, or surgery evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "eye_irritation_prescription_logic": {
+        "red": {
+          "medicine": "Lubricating eye drops + Cold compress",
+          "dosage": "Drops 3-4 times daily",
+          "advice": "Avoid rubbing, rest eyes, see doctor if persists > 3 days",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "itchy": {
+          "medicine": "Antihistamine eye drops + Avoid allergen",
+          "dosage": "As directed, usually 2-4 times daily",
+          "advice": "Don't rub eyes, cold compress, identify trigger",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "watery": {
+          "medicine": "Artificial tears + Identify cause",
+          "dosage": "As needed",
+          "advice": "May be allergy or irritation, avoid wind/smoke",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "multiple": {
+          "medicine": "Eye drops + Medical consultation if severe",
+          "dosage": "As directed",
+          "advice": "Multiple symptoms may indicate infection - see doctor",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "environmental": {
+          "medicine": "Lubricating drops + Avoid trigger",
+          "dosage": "Frequent drops",
+          "advice": "Dust, smoke, pollen - wear sunglasses, stay indoors",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "digital_strain": {
+          "medicine": "Artificial tears + Screen breaks",
+          "dosage": "Drops as needed",
+          "advice": "20-20-20 rule: every 20 min, look 20 feet away for 20 sec",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "product": {
+          "medicine": "Stop product + Lubricating drops + Rinse",
+          "dosage": "Immediate rinsing",
+          "advice": "Discontinue makeup/product, flush eyes, see doctor if severe",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "unknown": {
+          "medicine": "Lubricating drops + Medical evaluation if persists",
+          "dosage": "Monitor symptoms",
+          "advice": "If no improvement in 2-3 days, see eye doctor",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "acute": {
+          "medicine": "Lubricating drops + Cold compress + Rest",
+          "dosage": "Frequent drops",
+          "advice": "Rest eyes, avoid screens, see doctor if severe",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "recent": {
+          "medicine": "Artificial tears + Identify trigger",
+          "dosage": "As needed",
+          "advice": "Track what preceded irritation, avoid rubbing",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "today": {
+          "medicine": "Lubricating drops + Remove irritant",
+          "dosage": "Immediate relief",
+          "advice": "Rinse eyes, cold compress, rest",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "prolonged": {
+          "medicine": "Eye doctor consultation + Prescription drops possibly",
+          "dosage": "Professional evaluation",
+          "advice": "Persistent irritation needs ophthalmologist evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "ear_pain_prescription_logic": {
+        "left": {
+          "medicine": "Pain reliever + Warm compress + Medical evaluation",
+          "dosage": "As needed, see doctor",
+          "advice": "Ear pain often needs medical check - may be infection",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "right": {
+          "medicine": "Pain reliever + Warm compress + Medical evaluation",
+          "dosage": "As needed, see doctor",
+          "advice": "Ear pain often needs medical check - may be infection",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "bilateral": {
+          "medicine": "Medical consultation urgently",
+          "dosage": "See doctor today",
+          "advice": "Both ears affected may indicate infection or other condition",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "discharge": {
+          "medicine": "Urgent medical attention + Antibiotics likely",
+          "dosage": "See doctor immediately",
+          "advice": "Ear discharge indicates infection - needs treatment",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "infection": {
+          "medicine": "Medical consultation + Antibiotic ear drops",
+          "dosage": "Doctor prescription needed",
+          "advice": "Suspected infection needs proper diagnosis and antibiotics",
+          "image": "/static/images/Antibiotics (doctor prescribed).webp"
+        },
+        "hearing_loss": {
+          "medicine": "Urgent ENT consultation",
+          "dosage": "See specialist soon",
+          "advice": "Hearing loss with pain needs immediate evaluation",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "isolated": {
+          "medicine": "Pain reliever + Warm compress + Monitor",
+          "dosage": "As needed",
+          "advice": "If persists > 24 hours, see doctor",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "acute": {
+          "medicine": "Pain relief + Warm compress + Doctor visit",
+          "dosage": "See doctor within 24 hours",
+          "advice": "Sudden ear pain usually needs medical evaluation",
+          "image": "/static/images/Pain reliever (general).webp"
+        },
+        "recent": {
+          "medicine": "Pain reliever + Medical consultation",
+          "dosage": "See doctor soon",
+          "advice": "Don't delay - ear infections can worsen",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "prolonged": {
+          "medicine": "ENT specialist consultation",
+          "dosage": "Specialist care needed",
+          "advice": "Ongoing ear pain needs thorough evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "chronic": {
+          "medicine": "ENT specialist + Comprehensive evaluation",
+          "dosage": "Long-term management",
+          "advice": "May need imaging, hearing tests, specialized treatment",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "sore_throat_prescription_logic": {
+        "severe": {
+          "medicine": "Medical consultation + Possible antibiotics",
+          "dosage": "See doctor - may need strep test",
+          "advice": "Severe sore throat may be strep - needs evaluation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "moderate": {
+          "medicine": "Salt water gargle + Lozenges + Pain reliever",
+          "dosage": "Gargle 3-4 times daily, lozenges as needed",
+          "advice": "Warm fluids, rest voice, see doctor if no improvement in 3 days",
+          "image": "/static/images/Warm salt water gargle + Lozenges.webp"
+        },
+        "mild": {
+          "medicine": "Warm salt water gargle + Honey + Warm fluids",
+          "dosage": "Gargle several times daily",
+          "advice": "Stay hydrated, rest, avoid irritants",
+          "image": "/static/images/Warm salt water gargle + Lozenges.webp"
+        },
+        "irritation": {
+          "medicine": "Soothing lozenges + Warm fluids",
+          "dosage": "As needed",
+          "advice": "Usually mild, avoid irritants, steam inhalation helps",
+          "image": "/static/images/Warm salt water gargle + Lozenges.webp"
+        },
+        "dry": {
+          "medicine": "Humidifier + Lozenges + Increased fluids",
+          "dosage": "Continuous moisture",
+          "advice": "Increase humidity, avoid mouth breathing, stay hydrated",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "cough": {
+          "medicine": "Cough syrup + Gargle + Warm fluids",
+          "dosage": "As directed",
+          "advice": "Treat both cough and throat, honey helps both",
+          "image": "/static/images/Honey-based cough syrup.webp"
+        },
+        "mucus": {
+          "medicine": "Gargle + Expectorant + Warm fluids",
+          "dosage": "Frequent gargling",
+          "advice": "Post-nasal drip common cause - treat sinus congestion",
+          "image": "/static/images/Expectorant (Guaifenesin).webp"
+        },
+        "infection": {
+          "medicine": "Medical consultation + Antibiotics if bacterial",
+          "dosage": "Doctor evaluation needed",
+          "advice": "May need strep test, possible antibiotics",
+          "image": "/static/images/Antibiotics (doctor prescribed).webp"
+        },
+        "acute": {
+          "medicine": "Salt water gargle + Pain relief + Rest",
+          "dosage": "Start immediately",
+          "advice": "Early treatment helps, rest voice, warm fluids",
+          "image": "/static/images/Warm salt water gargle + Lozenges.webp"
+        },
+        "recent": {
+          "medicine": "Gargle + Lozenges + Monitor",
+          "dosage": "Several times daily",
+          "advice": "Track symptoms, see doctor if worsens or persists > 3 days",
+          "image": "/static/images/Warm salt water gargle + Lozenges.webp"
+        },
+        "prolonged": {
+          "medicine": "Medical consultation + Throat examination",
+          "dosage": "See doctor soon",
+          "advice": "Sore throat > 1 week needs medical evaluation",
+          "image": "/static/images/Medical evaluation required.webp"
+        },
+        "chronic": {
+          "medicine": "ENT specialist consultation",
+          "dosage": "Comprehensive evaluation",
+          "advice": "Chronic sore throat may indicate reflux, allergy, or other condition",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "acne_prescription_logic": {
+        "inflammatory": {
+          "medicine": "Benzoyl peroxide + Salicylic acid + Possible antibiotics",
+          "dosage": "Apply twice daily, see doctor if severe",
+          "advice": "Don't pop pimples, gentle cleansing, see dermatologist",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "comedonal": {
+          "medicine": "Salicylic acid cleanser + Retinoid cream",
+          "dosage": "Daily use, retinoid at night",
+          "advice": "Exfoliate gently, don't squeeze, consistent skincare routine",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "cystic": {
+          "medicine": "Dermatologist consultation + Prescription treatment",
+          "dosage": "Specialist care essential",
+          "advice": "Severe acne needs prescription medications - see dermatologist",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "mixed": {
+          "medicine": "Combination treatment + Dermatologist consultation",
+          "dosage": "Comprehensive approach",
+          "advice": "Multiple types need professional treatment plan",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "forehead": {
+          "medicine": "Salicylic acid + Benzoyl peroxide + Clean hair regularly",
+          "dosage": "Apply to affected area twice daily",
+          "advice": "Keep hair clean, avoid hair products on forehead",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "cheeks": {
+          "medicine": "Gentle cleanser + Spot treatment",
+          "dosage": "Twice daily cleansing",
+          "advice": "Change pillowcases often, don't touch face, clean phone",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "lower_face": {
+          "medicine": "Anti-acne treatment + Possible hormonal evaluation",
+          "dosage": "As directed",
+          "advice": "Jawline/chin acne often hormonal - may need doctor consultation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "body": {
+          "medicine": "Body wash with salicylic acid + Shower after sweating",
+          "dosage": "Daily use",
+          "advice": "Shower after exercise, loose breathable clothing",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "acute": {
+          "medicine": "Spot treatment + Gentle cleansing",
+          "dosage": "Apply to breakouts",
+          "advice": "Don't pop, keep clean, may be stress or diet related",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "recent": {
+          "medicine": "Start acne treatment regimen",
+          "dosage": "Consistent daily use",
+          "advice": "Early treatment prevents scarring, consistent routine important",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "persistent": {
+          "medicine": "Dermatologist consultation + Prescription treatment",
+          "dosage": "Professional care needed",
+          "advice": "Persistent acne needs medical treatment to prevent scarring",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "chronic": {
+          "medicine": "Dermatologist + Long-term management plan",
+          "dosage": "Ongoing treatment",
+          "advice": "May need oral medications, consider Accutane for severe cases",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      },
+      "itching_prescription_logic": {
+        "generalized": {
+          "medicine": "Antihistamine + Moisturizer + Medical evaluation",
+          "dosage": "Antihistamine once daily",
+          "advice": "Widespread itching may indicate allergy or internal issue - see doctor",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "localized": {
+          "medicine": "Hydrocortisone cream + Antihistamine",
+          "dosage": "Apply cream twice daily",
+          "advice": "Identify and avoid trigger, don't scratch",
+          "image": "/static/images/Hydrocortisone cream 1%.webp"
+        },
+        "intimate": {
+          "medicine": "Medical consultation + Antifungal or specific treatment",
+          "dosage": "Doctor evaluation needed",
+          "advice": "Intimate area itching needs proper diagnosis - see doctor",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "head": {
+          "medicine": "Medicated shampoo + Check for lice",
+          "dosage": "As directed",
+          "advice": "May be scalp condition or lice - see doctor if persists",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "acute": {
+          "medicine": "Antihistamine + Cold compress",
+          "dosage": "Immediate relief",
+          "advice": "Sudden itching may be allergic reaction - monitor for severity",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "recent": {
+          "medicine": "Antihistamine + Identify trigger",
+          "dosage": "Once daily",
+          "advice": "Track new products, foods, or environmental changes",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "subacute": {
+          "medicine": "Antihistamine + Topical treatment + Medical check",
+          "dosage": "Ongoing treatment",
+          "advice": "Continuing itching needs evaluation for cause",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "chronic": {
+          "medicine": "Medical evaluation + Comprehensive treatment",
+          "dosage": "Doctor consultation essential",
+          "advice": "Chronic itching may indicate underlying condition - needs investigation",
+          "image": "/static/images/Medical consultation recommended.webp"
+        },
+        "product": {
+          "medicine": "Stop product + Antihistamine + Hydrocortisone",
+          "dosage": "Discontinue trigger immediately",
+          "advice": "Identify and avoid product, patch test new products",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "fabric": {
+          "medicine": "Change clothing + Antihistamine + Hypoallergenic detergent",
+          "dosage": "As needed",
+          "advice": "Wear breathable fabrics, wash new clothes before wearing",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "food": {
+          "medicine": "Antihistamine + Avoid trigger food",
+          "dosage": "Immediate treatment",
+          "advice": "May be food allergy - identify trigger, see allergist if severe",
+          "image": "/static/images/Antihistamine (general).webp"
+        },
+        "unknown": {
+          "medicine": "Antihistamine + Medical evaluation + Allergy testing",
+          "dosage": "Doctor consultation",
+          "advice": "Unknown cause needs investigation to prevent recurrence",
+          "image": "/static/images/Medical consultation recommended.webp"
+        }
+      }
+    }
+  }
+}

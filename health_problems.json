@@ -1,0 +1,279 @@
+{
+  "health_problems": [
+    {
+      "name": "headache",
+      "synonyms": [
+        "head pain",
+        "migraine",
+        "pain in head",
+        "ache in head",
+        "tension headache",
+        "throbbing head"
+      ]
+    },
+    {
+      "name": "fever",
+      "synonyms": [
+        "high temperature",
+        "body heat",
+        "temperature rise",
+        "hot body",
+        "feverish"
+      ]
+    },
+    {
+      "name": "common cold",
+      "synonyms": [
+        "cold",
+        "runny nose",
+        "blocked nose",
+        "sore throat",
+        "sneezing",
+        "stuffy nose"
+      ]
+    },
+    {
+      "name": "cough",
+      "synonyms": [
+        "dry cough",
+        "wet cough",
+        "mucus cough",
+        "throat irritation",
+        "continuous cough",
+        "severe cough"
+      ]
+    },
+    {
+      "name": "flu",
+      "synonyms": ["influenza", "viral flu", "body ache flu", "seasonal flu"]
+    },
+    {
+      "name": "body pain",
+      "synonyms": ["body ache", "muscle ache", "muscle pain", "joint pain"]
+    },
+    {
+      "name": "stomach pain",
+      "synonyms": [
+        "abdominal pain",
+        "tummy ache",
+        "stomach ache",
+        "gas pain",
+        "cramps"
+      ]
+    },
+    {
+      "name": "acidity",
+      "synonyms": [
+        "acid reflux",
+        "heartburn",
+        "gastric acidity",
+        "burning chest",
+        "indigestion"
+      ]
+    },
+    {
+      "name": "diarrhea",
+      "synonyms": [
+        "loose motion",
+        "watery stool",
+        "frequent stool",
+        "upset stomach"
+      ]
+    },
+    {
+      "name": "constipation",
+      "synonyms": [
+        "hard stool",
+        "difficulty passing stool",
+        "no motion",
+        "dry stool"
+      ]
+    },
+    {
+      "name": "vomiting",
+      "synonyms": ["nausea", "throwing up", "feeling sick", "vomit sensation"]
+    },
+    {
+      "name": "food poisoning",
+      "synonyms": [
+        "spoiled food illness",
+        "bad food reaction",
+        "eating contaminated food"
+      ]
+    },
+    {
+      "name": "dehydration",
+      "synonyms": [
+        "lack of water",
+        "dry mouth",
+        "low fluids",
+        "excess sweating"
+      ]
+    },
+    {
+      "name": "allergy",
+      "synonyms": [
+        "allergic reaction",
+        "skin allergy",
+        "dust allergy",
+        "pollen allergy",
+        "itching allergy"
+      ]
+    },
+    {
+      "name": "skin rash",
+      "synonyms": ["red patches", "skin irritation", "itchy rash", "red rash"]
+    },
+    {
+      "name": "acne",
+      "synonyms": ["pimples", "zits", "breakouts", "face acne"]
+    },
+    {
+      "name": "toothache",
+      "synonyms": ["teeth pain", "gum pain", "tooth pain", "cavity pain"]
+    },
+    {
+      "name": "eye irritation",
+      "synonyms": ["red eyes", "itchy eyes", "burning eyes", "watery eyes"]
+    },
+    {
+      "name": "ear pain",
+      "synonyms": ["ear ache", "inner ear pain", "ear discomfort"]
+    },
+    {
+      "name": "sore throat",
+      "synonyms": [
+        "throat pain",
+        "throat irritation",
+        "difficulty swallowing",
+        "dry throat"
+      ]
+    },
+    {
+      "name": "back pain",
+      "synonyms": [
+        "lower back pain",
+        "upper back pain",
+        "spine pain",
+        "backache"
+      ]
+    },
+    {
+      "name": "neck pain",
+      "synonyms": ["cervical pain", "stiff neck", "neck stiffness"]
+    },
+    {
+      "name": "shoulder pain",
+      "synonyms": ["arm joint pain", "shoulder stiffness"]
+    },
+    {
+      "name": "knee pain",
+      "synonyms": ["leg joint pain", "joint pain in knee", "knee discomfort"]
+    },
+    {
+      "name": "muscle strain",
+      "synonyms": ["muscle pull", "muscle injury", "muscle tightness"]
+    },
+    {
+      "name": "burn injury",
+      "synonyms": ["skin burn", "hot burn", "minor burn", "burn mark"]
+    },
+    {
+      "name": "wound",
+      "synonyms": ["cut", "injury", "scratch", "bleeding cut"]
+    },
+    {
+      "name": "sprain",
+      "synonyms": ["twisted ankle", "ankle sprain", "ligament injury"]
+    },
+    {
+      "name": "dizziness",
+      "synonyms": ["feeling faint", "lightheaded", "vertigo"]
+    },
+    {
+      "name": "hypertension",
+      "synonyms": ["high blood pressure", "bp high", "pressure increase"]
+    },
+    {
+      "name": "low blood pressure",
+      "synonyms": ["bp low", "weakness due to bp", "low bp"]
+    },
+    {
+      "name": "diabetes symptoms",
+      "synonyms": ["high sugar symptoms", "sugar problem signs"]
+    },
+    {
+      "name": "period pain",
+      "synonyms": ["menstrual cramps", "period cramps", "menstruation pain"]
+    },
+    {
+      "name": "urine infection",
+      "synonyms": [
+        "burning urination",
+        "uti",
+        "urinary infection",
+        "pain while peeing"
+      ]
+    },
+    {
+      "name": "itching",
+      "synonyms": ["skin irritation", "itchy skin", "pruritus"]
+    },
+    {
+      "name": "insomnia",
+      "synonyms": ["sleep problem", "can't sleep", "difficulty sleeping"]
+    },
+    {
+      "name": "stress",
+      "synonyms": ["mental stress", "pressure", "anxiety stress"]
+    },
+    {
+      "name": "anxiety",
+      "synonyms": ["panic", "fear", "nervousness", "uneasiness"]
+    },
+    {
+      "name": "sunstroke",
+      "synonyms": ["heat stroke", "sun heat illness", "overheat"]
+    },
+    {
+      "name": "cold sores",
+      "synonyms": ["mouth blisters", "lip blisters", "oral sores"]
+    },
+    {
+      "name": "motion sickness",
+      "synonyms": [
+        "travel sickness",
+        "vomit while travel",
+        "nausea during travel"
+      ]
+    },
+    {
+      "name": "itchy scalp",
+      "synonyms": ["dandruff", "dry scalp", "scalp irritation"]
+    },
+    {
+      "name": "hair fall",
+      "synonyms": ["hair loss", "losing hair", "hair thinning"]
+    },
+    {
+      "name": "gas",
+      "synonyms": ["bloating", "gastric", "burping", "stomach gas"]
+    },
+    {
+      "name": "sciatica",
+      "synonyms": ["nerve pain leg", "lower body nerve pain", "hip to leg pain"]
+    },
+    {
+      "name": "chest congestion",
+      "synonyms": ["mucus in chest", "heavy chest", "chest blockage"]
+    },
+    {
+      "name": "breathlessness",
+      "synonyms": ["short breath", "difficulty breathing"]
+    },
+    {
+      "name": "fatigue",
+      "synonyms": ["tiredness", "no energy", "weakness"]
+    }
+  ]
+}

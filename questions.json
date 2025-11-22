@@ -1,0 +1,1583 @@
+{
+  "questions": {
+    "headache": [
+      {
+        "id": "duration",
+        "question": "How long have you been experiencing the headache?",
+        "options": [
+          { "text": "Less than 1 hour", "category": "mild_short" },
+          { "text": "1–6 hours", "category": "mild" },
+          { "text": "6–12 hours", "category": "moderate" },
+          { "text": "More than 12 hours", "category": "severe_prolonged" }
+        ]
+      },
+      {
+        "id": "type",
+        "question": "What type of headache are you experiencing?",
+        "options": [
+          { "text": "Sharp pain", "category": "tension" },
+          { "text": "Dull ache", "category": "normal" },
+          { "text": "Throbbing or pulsating pain", "category": "migraine" },
+          { "text": "Burning or pressure-like pain", "category": "sinus" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Do you have any other symptoms along with the headache?",
+        "options": [
+          { "text": "Nausea or vomiting", "category": "migraine" },
+          { "text": "Sensitivity to light or sound", "category": "migraine" },
+          { "text": "Dizziness or blurred vision", "category": "severe" },
+          { "text": "No other symptoms", "category": "mild" }
+        ]
+      }
+    ],
+
+    "fever": [
+      {
+        "id": "temperature",
+        "question": "Do you know your current body temperature?",
+        "options": [
+          { "text": "Below 100°F (37.8°C)", "category": "mild" },
+          { "text": "100–102°F (37.8–38.9°C)", "category": "moderate" },
+          { "text": "102–104°F (38.9–40°C)", "category": "high" },
+          { "text": "Above 104°F (40°C)", "category": "severe" },
+          { "text": "I don't know", "category": "unknown" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you had the fever?",
+        "options": [
+          { "text": "Less than 24 hours", "category": "acute" },
+          { "text": "1–3 days", "category": "moderate" },
+          { "text": "3–7 days", "category": "prolonged" },
+          { "text": "More than 7 days", "category": "chronic" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Do you also have chills, shivering, or body pain?",
+        "options": [
+          { "text": "Yes, severe chills and shivering", "category": "severe" },
+          { "text": "Moderate chills and body pain", "category": "moderate" },
+          { "text": "Mild discomfort", "category": "mild" },
+          { "text": "No other symptoms", "category": "isolated" }
+        ]
+      }
+    ],
+
+    "common_cold": [
+      {
+        "id": "symptoms",
+        "question": "Do you have a runny nose, blocked nose, or sore throat?",
+        "options": [
+          { "text": "Runny nose only", "category": "mild" },
+          { "text": "Blocked nose only", "category": "moderate" },
+          { "text": "Sore throat only", "category": "throat" },
+          { "text": "Multiple symptoms", "category": "severe" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have these symptoms been present?",
+        "options": [
+          { "text": "1–2 days", "category": "early" },
+          { "text": "3–5 days", "category": "active" },
+          { "text": "6–10 days", "category": "prolonged" },
+          { "text": "More than 10 days", "category": "chronic" }
+        ]
+      },
+      {
+        "id": "severity",
+        "question": "Are the symptoms mild, moderate, or severe?",
+        "options": [
+          { "text": "Mild - can do daily activities", "category": "mild" },
+          { "text": "Moderate - some difficulty", "category": "moderate" },
+          { "text": "Severe - affecting daily life", "category": "severe" }
+        ]
+      }
+    ],
+
+    "cough": [
+      {
+        "id": "type",
+        "question": "Is the cough dry or with mucus?",
+        "options": [
+          { "text": "Dry cough", "category": "dry" },
+          { "text": "Cough with clear mucus", "category": "productive_clear" },
+          { "text": "Cough with yellow/green mucus", "category": "productive_colored" },
+          { "text": "Cough with blood", "category": "severe" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been coughing?",
+        "options": [
+          { "text": "Less than 3 days", "category": "acute" },
+          { "text": "3–7 days", "category": "subacute" },
+          { "text": "1–3 weeks", "category": "prolonged" },
+          { "text": "More than 3 weeks", "category": "chronic" }
+        ]
+      },
+      {
+        "id": "severity",
+        "question": "Is your cough mild, moderate, or severe?",
+        "options": [
+          { "text": "Occasional cough", "category": "mild" },
+          { "text": "Frequent during day", "category": "moderate" },
+          { "text": "Constant, affecting sleep", "category": "severe" }
+        ]
+      }
+    ],
+
+    "flu": [
+      {
+        "id": "body_pain",
+        "question": "Are you experiencing body pain or fatigue?",
+        "options": [
+          { "text": "Severe body aches", "category": "severe" },
+          { "text": "Moderate muscle pain", "category": "moderate" },
+          { "text": "Mild fatigue", "category": "mild" },
+          { "text": "No body pain", "category": "none" }
+        ]
+      },
+      {
+        "id": "temperature",
+        "question": "Do you have a fever along with flu symptoms?",
+        "options": [
+          { "text": "High fever (above 102°F)", "category": "high_fever" },
+          { "text": "Moderate fever (100–102°F)", "category": "moderate_fever" },
+          { "text": "Low-grade fever", "category": "mild_fever" },
+          { "text": "No fever", "category": "no_fever" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you had flu symptoms?",
+        "options": [
+          { "text": "1–2 days", "category": "early" },
+          { "text": "3–5 days", "category": "active" },
+          { "text": "6–10 days", "category": "prolonged" },
+          { "text": "More than 10 days", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "body_pain": [
+      {
+        "id": "location",
+        "question": "Which part of the body is hurting?",
+        "options": [
+          { "text": "All over body", "category": "generalized" },
+          { "text": "Back and shoulders", "category": "upper_body" },
+          { "text": "Arms and hands", "category": "upper_limbs" },
+          { "text": "Legs and feet", "category": "lower_limbs" }
+        ]
+      },
+      {
+        "id": "severity",
+        "question": "What is the severity of the pain on a scale of 1 to 10?",
+        "options": [
+          { "text": "1–3 (Mild)", "category": "mild" },
+          { "text": "4–6 (Moderate)", "category": "moderate" },
+          { "text": "7–8 (Severe)", "category": "severe" },
+          { "text": "9–10 (Extreme)", "category": "extreme" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "When did the pain begin?",
+        "options": [
+          { "text": "Within last few hours", "category": "acute" },
+          { "text": "Today", "category": "recent" },
+          { "text": "2–7 days ago", "category": "subacute" },
+          { "text": "More than a week ago", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "stomach_pain": [
+      {
+        "id": "location",
+        "question": "Is the pain in the upper, middle, or lower abdomen?",
+        "options": [
+          { "text": "Upper abdomen", "category": "upper" },
+          { "text": "Around navel (middle)", "category": "middle" },
+          { "text": "Lower abdomen", "category": "lower" },
+          { "text": "All over stomach", "category": "generalized" }
+        ]
+      },
+      {
+        "id": "type",
+        "question": "Is the pain sharp, dull, or cramping?",
+        "options": [
+          { "text": "Sharp, stabbing pain", "category": "sharp" },
+          { "text": "Dull, constant ache", "category": "dull" },
+          { "text": "Cramping pain", "category": "cramps" },
+          { "text": "Burning sensation", "category": "burning" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Do you also have gas, nausea, or bloating?",
+        "options": [
+          { "text": "Yes, severe bloating", "category": "bloating" },
+          { "text": "Nausea and vomiting", "category": "nausea" },
+          { "text": "Excessive gas", "category": "gas" },
+          { "text": "No other symptoms", "category": "isolated" }
+        ]
+      }
+    ],
+
+    "acidity": [
+      {
+        "id": "symptoms",
+        "question": "Are you experiencing heartburn, sour burps, or chest burning?",
+        "options": [
+          { "text": "Severe heartburn", "category": "severe_heartburn" },
+          { "text": "Sour or acidic burps", "category": "acid_reflux" },
+          { "text": "Burning in chest", "category": "chest_burn" },
+          { "text": "All of the above", "category": "multiple" }
+        ]
+      },
+      {
+        "id": "triggers",
+        "question": "Did you eat spicy or oily food before symptoms started?",
+        "options": [
+          { "text": "Yes, very spicy food", "category": "spicy" },
+          { "text": "Yes, oily/fried food", "category": "oily" },
+          { "text": "Heavy meal", "category": "heavy" },
+          { "text": "No trigger food", "category": "none" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been feeling acidity?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "Few hours", "category": "recent" },
+          { "text": "Today", "category": "today" },
+          { "text": "Recurring problem", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "diarrhea": [
+      {
+        "id": "frequency",
+        "question": "How many times have you passed loose stools today?",
+        "options": [
+          { "text": "1–2 times", "category": "mild" },
+          { "text": "3–5 times", "category": "moderate" },
+          { "text": "6–10 times", "category": "severe" },
+          { "text": "More than 10 times", "category": "extreme" }
+        ]
+      },
+      {
+        "id": "dehydration",
+        "question": "Are you feeling thirsty, dizzy, or weak?",
+        "options": [
+          { "text": "Yes, very weak and dizzy", "category": "severe_dehydration" },
+          { "text": "Moderate thirst and weakness", "category": "moderate_dehydration" },
+          { "text": "Slight thirst", "category": "mild_dehydration" },
+          { "text": "No signs of dehydration", "category": "hydrated" }
+        ]
+      },
+      {
+        "id": "food",
+        "question": "Did you eat anything unusual before symptoms started?",
+        "options": [
+          { "text": "Yes, outside/street food", "category": "food_poisoning" },
+          { "text": "Spoiled or old food", "category": "contaminated" },
+          { "text": "New food I've never tried", "category": "new_food" },
+          { "text": "Nothing unusual", "category": "none" }
+        ]
+      }
+    ],
+
+    "constipation": [
+      {
+        "id": "duration",
+        "question": "How long have you been experiencing difficulty passing stool?",
+        "options": [
+          { "text": "1–2 days", "category": "acute" },
+          { "text": "3–5 days", "category": "moderate" },
+          { "text": "More than 5 days", "category": "severe" },
+          { "text": "Ongoing issue", "category": "chronic" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Is the stool hard, dry, or pellet-like?",
+        "options": [
+          { "text": "Very hard and dry", "category": "severe" },
+          { "text": "Small pellet-like stools", "category": "moderate" },
+          { "text": "Slightly hard", "category": "mild" },
+          { "text": "Normal but infrequent", "category": "irregular" }
+        ]
+      },
+      {
+        "id": "diet",
+        "question": "Are you drinking enough water and eating fiber-rich foods?",
+        "options": [
+          { "text": "No, low water and fiber intake", "category": "poor_diet" },
+          { "text": "Sometimes", "category": "irregular_diet" },
+          { "text": "Yes, adequate intake", "category": "good_diet" }
+        ]
+      }
+    ],
+
+    "vomiting": [
+      {
+        "id": "frequency",
+        "question": "How many times have you vomited today?",
+        "options": [
+          { "text": "Once", "category": "single" },
+          { "text": "2–3 times", "category": "moderate" },
+          { "text": "4–6 times", "category": "severe" },
+          { "text": "More than 6 times", "category": "extreme" }
+        ]
+      },
+      {
+        "id": "nausea",
+        "question": "Do you feel continuous nausea?",
+        "options": [
+          { "text": "Yes, constant nausea", "category": "persistent" },
+          { "text": "Comes and goes", "category": "intermittent" },
+          { "text": "Only after eating", "category": "post_meal" },
+          { "text": "No nausea between episodes", "category": "isolated" }
+        ]
+      },
+      {
+        "id": "food",
+        "question": "Did vomiting start after eating something?",
+        "options": [
+          { "text": "Yes, immediately after eating", "category": "food_related" },
+          { "text": "Few hours after eating", "category": "delayed" },
+          { "text": "Not related to food", "category": "non_food" },
+          { "text": "Haven't eaten anything", "category": "empty_stomach" }
+        ]
+      }
+    ],
+
+    "food_poisoning": [
+      {
+        "id": "onset",
+        "question": "Did symptoms start after eating outside food?",
+        "options": [
+          { "text": "Yes, within 1–2 hours", "category": "rapid_onset" },
+          { "text": "Yes, after 3–6 hours", "category": "moderate_onset" },
+          { "text": "Yes, after 12+ hours", "category": "delayed_onset" },
+          { "text": "No, ate home-cooked food", "category": "home_food" }
+        ]
+      },
+      {
+        "id": "diarrhea",
+        "question": "Do you also have loose motions?",
+        "options": [
+          { "text": "Yes, severe diarrhea", "category": "severe_diarrhea" },
+          { "text": "Yes, moderate", "category": "moderate_diarrhea" },
+          { "text": "Mild loose stools", "category": "mild_diarrhea" },
+          { "text": "No diarrhea", "category": "no_diarrhea" }
+        ]
+      },
+      {
+        "id": "vomiting",
+        "question": "Have you vomited recently?",
+        "options": [
+          { "text": "Yes, multiple times", "category": "severe_vomiting" },
+          { "text": "Yes, once or twice", "category": "mild_vomiting" },
+          { "text": "Feeling nauseous but no vomiting", "category": "nausea_only" },
+          { "text": "No vomiting", "category": "no_vomiting" }
+        ]
+      }
+    ],
+
+    "dehydration": [
+      {
+        "id": "thirst",
+        "question": "Are you feeling intense thirst or dryness in the mouth?",
+        "options": [
+          { "text": "Extreme thirst, very dry mouth", "category": "severe" },
+          { "text": "Moderate thirst", "category": "moderate" },
+          { "text": "Slight dryness", "category": "mild" },
+          { "text": "No unusual thirst", "category": "none" }
+        ]
+      },
+      {
+        "id": "urine",
+        "question": "Is your urine dark yellow?",
+        "options": [
+          { "text": "Very dark yellow/amber", "category": "severe" },
+          { "text": "Dark yellow", "category": "moderate" },
+          { "text": "Light yellow", "category": "mild" },
+          { "text": "Clear or pale yellow", "category": "hydrated" }
+        ]
+      },
+      {
+        "id": "weakness",
+        "question": "Do you feel weak or dizzy?",
+        "options": [
+          { "text": "Very weak, can't stand properly", "category": "severe" },
+          { "text": "Moderate weakness and dizziness", "category": "moderate" },
+          { "text": "Slight tiredness", "category": "mild" },
+          { "text": "No weakness", "category": "none" }
+        ]
+      }
+    ],
+
+    "allergy": [
+      {
+        "id": "trigger",
+        "question": "Do you know what triggered the allergy (dust, food, pollen)?",
+        "options": [
+          { "text": "Dust or air pollution", "category": "environmental" },
+          { "text": "Food item", "category": "food" },
+          { "text": "Pollen or plants", "category": "seasonal" },
+          { "text": "Don't know the trigger", "category": "unknown" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Are you experiencing sneezing, itching, or rash?",
+        "options": [
+          { "text": "Continuous sneezing", "category": "respiratory" },
+          { "text": "Itching and rash", "category": "skin" },
+          { "text": "Watery eyes and runny nose", "category": "nasal" },
+          { "text": "Multiple symptoms", "category": "severe" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "When did the allergy symptoms begin?",
+        "options": [
+          { "text": "Within last hour", "category": "acute" },
+          { "text": "Today", "category": "recent" },
+          { "text": "Few days ago", "category": "prolonged" },
+          { "text": "Recurring problem", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "skin_rash": [
+      {
+        "id": "location",
+        "question": "Where is the rash located?",
+        "options": [
+          { "text": "Face and neck", "category": "upper_body" },
+          { "text": "Arms and hands", "category": "limbs" },
+          { "text": "Torso (chest/back)", "category": "trunk" },
+          { "text": "Multiple areas", "category": "widespread" }
+        ]
+      },
+      {
+        "id": "appearance",
+        "question": "Is the rash red, itchy, or swollen?",
+        "options": [
+          { "text": "Red and very itchy", "category": "inflammatory" },
+          { "text": "Swollen with bumps", "category": "raised" },
+          { "text": "Flat red patches", "category": "flat" },
+          { "text": "Blisters or oozing", "category": "severe" }
+        ]
+      },
+      {
+        "id": "spread",
+        "question": "Is the rash spreading?",
+        "options": [
+          { "text": "Yes, spreading rapidly", "category": "progressive" },
+          { "text": "Slowly spreading", "category": "gradual" },
+          { "text": "Staying in same area", "category": "localized" },
+          { "text": "Getting better", "category": "improving" }
+        ]
+      }
+    ],
+
+    "acne": [
+      {
+        "id": "type",
+        "question": "Are the pimples red, whiteheads, or cystic acne?",
+        "options": [
+          { "text": "Red inflamed pimples", "category": "inflammatory" },
+          { "text": "Whiteheads or blackheads", "category": "comedonal" },
+          { "text": "Large, painful cysts", "category": "cystic" },
+          { "text": "Mix of different types", "category": "mixed" }
+        ]
+      },
+      {
+        "id": "location",
+        "question": "Where are the pimples located?",
+        "options": [
+          { "text": "Forehead", "category": "forehead" },
+          { "text": "Cheeks", "category": "cheeks" },
+          { "text": "Chin and jawline", "category": "lower_face" },
+          { "text": "Back or chest", "category": "body" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you had acne?",
+        "options": [
+          { "text": "New outbreak", "category": "acute" },
+          { "text": "Few weeks", "category": "recent" },
+          { "text": "Few months", "category": "persistent" },
+          { "text": "Ongoing problem", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "toothache": [
+      {
+        "id": "location",
+        "question": "Is the pain in a specific tooth or the entire jaw?",
+        "options": [
+          { "text": "One specific tooth", "category": "localized" },
+          { "text": "Multiple teeth", "category": "multiple" },
+          { "text": "Entire jaw", "category": "generalized" },
+          { "text": "Radiating to ear/head", "category": "referred" }
+        ]
+      },
+      {
+        "id": "severity",
+        "question": "How severe is the tooth pain?",
+        "options": [
+          { "text": "Mild discomfort", "category": "mild" },
+          { "text": "Moderate, constant pain", "category": "moderate" },
+          { "text": "Severe, throbbing pain", "category": "severe" },
+          { "text": "Unbearable pain", "category": "extreme" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Do you have swelling or sensitivity to hot/cold?",
+        "options": [
+          { "text": "Yes, visible swelling", "category": "swollen" },
+          { "text": "Sensitive to hot/cold", "category": "sensitive" },
+          { "text": "Pain when chewing", "category": "pressure_pain" },
+          { "text": "No other symptoms", "category": "isolated" }
+        ]
+      }
+    ],
+
+    "eye_irritation": [
+      {
+        "id": "symptoms",
+        "question": "Are your eyes red, itchy, or watery?",
+        "options": [
+          { "text": "Very red and bloodshot", "category": "red" },
+          { "text": "Itchy and burning", "category": "itchy" },
+          { "text": "Watery eyes", "category": "watery" },
+          { "text": "All of the above", "category": "multiple" }
+        ]
+      },
+      {
+        "id": "cause",
+        "question": "Did irritation start after dust exposure or screen use?",
+        "options": [
+          { "text": "After dust/pollution exposure", "category": "environmental" },
+          { "text": "After long screen time", "category": "digital_strain" },
+          { "text": "After using makeup/product", "category": "product" },
+          { "text": "No clear cause", "category": "unknown" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have your eyes been irritated?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "Few hours", "category": "recent" },
+          { "text": "Today", "category": "today" },
+          { "text": "Several days", "category": "prolonged" }
+        ]
+      }
+    ],
+
+    "ear_pain": [
+      {
+        "id": "location",
+        "question": "Is the pain in one ear or both?",
+        "options": [
+          { "text": "Left ear only", "category": "left" },
+          { "text": "Right ear only", "category": "right" },
+          { "text": "Both ears", "category": "bilateral" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Do you have discharge, fever, or hearing difficulty?",
+        "options": [
+          { "text": "Yes, discharge from ear", "category": "discharge" },
+          { "text": "Fever with ear pain", "category": "infection" },
+          { "text": "Reduced hearing", "category": "hearing_loss" },
+          { "text": "Pain only, no other symptoms", "category": "isolated" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you had ear pain?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "1–2 days", "category": "recent" },
+          { "text": "3–7 days", "category": "prolonged" },
+          { "text": "More than a week", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "sore_throat": [
+      {
+        "id": "pain_level",
+        "question": "Is swallowing painful?",
+        "options": [
+          { "text": "Very painful to swallow", "category": "severe" },
+          { "text": "Moderately painful", "category": "moderate" },
+          { "text": "Slightly uncomfortable", "category": "mild" },
+          { "text": "No pain, just scratchiness", "category": "irritation" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Do you have dry throat, cough, or phlegm?",
+        "options": [
+          { "text": "Very dry throat", "category": "dry" },
+          { "text": "Cough with throat pain", "category": "cough" },
+          { "text": "Phlegm in throat", "category": "mucus" },
+          { "text": "White patches on throat", "category": "infection" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you had throat discomfort?",
+        "options": [
+          { "text": "Just started today", "category": "acute" },
+          { "text": "1–3 days", "category": "recent" },
+          { "text": "4–7 days", "category": "prolonged" },
+          { "text": "More than a week", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "back_pain": [
+      {
+        "id": "location",
+        "question": "Is the pain in upper, middle, or lower back?",
+        "options": [
+          { "text": "Upper back/shoulders", "category": "upper" },
+          { "text": "Middle back", "category": "middle" },
+          { "text": "Lower back", "category": "lower" },
+          { "text": "Entire back", "category": "generalized" }
+        ]
+      },
+      {
+        "id": "type",
+        "question": "Is the pain sharp or dull?",
+        "options": [
+          { "text": "Sharp, stabbing pain", "category": "sharp" },
+          { "text": "Dull, constant ache", "category": "dull" },
+          { "text": "Burning sensation", "category": "burning" },
+          { "text": "Stiff and tight", "category": "stiffness" }
+        ]
+      },
+      {
+        "id": "trigger",
+        "question": "Did the pain start after lifting heavy items or sitting long?",
+        "options": [
+          { "text": "After lifting heavy objects", "category": "strain" },
+          { "text": "After prolonged sitting", "category": "postural" },
+          { "text": "After exercise", "category": "activity" },
+          { "text": "No specific trigger", "category": "spontaneous" }
+        ]
+      }
+    ],
+
+    "neck_pain": [
+      {
+        "id": "stiffness",
+        "question": "Do you have stiffness in the neck?",
+        "options": [
+          { "text": "Very stiff, can't move", "category": "severe_stiffness" },
+          { "text": "Moderate stiffness", "category": "moderate_stiffness" },
+          { "text": "Slight stiffness", "category": "mild_stiffness" },
+          { "text": "No stiffness, just pain", "category": "pain_only" }
+        ]
+      },
+      {
+        "id": "movement",
+        "question": "Does the pain increase when moving the neck?",
+        "options": [
+          { "text": "Yes, any movement hurts", "category": "movement_pain" },
+          { "text": "Only certain movements", "category": "directional_pain" },
+          { "text": "Pain when turning head", "category": "rotation_pain" },
+          { "text": "No increase with movement", "category": "static_pain" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you had neck pain?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "1–3 days", "category": "recent" },
+          { "text": "4–7 days", "category": "subacute" },
+          { "text": "More than a week", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "shoulder_pain": [
+      {
+        "id": "movement",
+        "question": "Is shoulder movement painful?",
+        "options": [
+          { "text": "Can't move shoulder at all", "category": "frozen" },
+          { "text": "Limited movement with pain", "category": "restricted" },
+          { "text": "Pain only with certain movements", "category": "selective" },
+          { "text": "Full movement but painful", "category": "mobile_pain" }
+        ]
+      },
+      {
+        "id": "type",
+        "question": "Is the pain sharp, burning, or dull?",
+        "options": [
+          { "text": "Sharp, stabbing pain", "category": "sharp" },
+          { "text": "Burning sensation", "category": "burning" },
+          { "text": "Dull, constant ache", "category": "dull" },
+          { "text": "Throbbing pain", "category": "throbbing" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "Since when are you feeling shoulder pain?",
+        "options": [
+          { "text": "Just happened", "category": "acute" },
+          { "text": "1–3 days", "category": "recent" },
+          { "text": "1–2 weeks", "category": "subacute" },
+          { "text": "More than 2 weeks", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "knee_pain": [
+      {
+        "id": "location",
+        "question": "Is the pain in the front, back, or sides of the knee?",
+        "options": [
+          { "text": "Front of knee (kneecap)", "category": "anterior" },
+          { "text": "Back of knee", "category": "posterior" },
+          { "text": "Inner side of knee", "category": "medial" },
+          { "text": "Outer side of knee", "category": "lateral" }
+        ]
+      },
+      {
+        "id": "movement",
+        "question": "Does pain increase when walking or bending?",
+        "options": [
+          { "text": "Yes, can't walk properly", "category": "severe_limitation" },
+          { "text": "Pain when climbing stairs", "category": "stairs" },
+          { "text": "Pain when bending knee", "category": "flexion" },
+          { "text": "Constant pain, not movement-related", "category": "constant" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been experiencing knee pain?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "Few days", "category": "recent" },
+          { "text": "1–2 weeks", "category": "subacute" },
+          { "text": "More than 2 weeks", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "muscle_strain": [
+      {
+        "id": "location",
+        "question": "Which muscle area is affected?",
+        "options": [
+          { "text": "Neck and shoulders", "category": "upper" },
+          { "text": "Arms", "category": "arms" },
+          { "text": "Back muscles", "category": "back" },
+          { "text": "Leg muscles", "category": "legs" }
+        ]
+      },
+      {
+        "id": "cause",
+        "question": "Did the strain occur after exercise or lifting heavy objects?",
+        "options": [
+          { "text": "After intense exercise", "category": "exercise" },
+          { "text": "After lifting heavy weight", "category": "lifting" },
+          { "text": "Sudden movement or twist", "category": "sudden" },
+          { "text": "Gradual onset", "category": "gradual" }
+        ]
+      },
+      {
+        "id": "severity",
+        "question": "Is the pain mild, moderate, or severe?",
+        "options": [
+          { "text": "Mild, can still use muscle", "category": "mild" },
+          { "text": "Moderate, limited movement", "category": "moderate" },
+          { "text": "Severe, can't use muscle", "category": "severe" }
+        ]
+      }
+    ],
+
+    "burn_injury": [
+      {
+        "id": "type",
+        "question": "Was the burn caused by hot water, flame, or something else?",
+        "options": [
+          { "text": "Hot water or steam", "category": "scald" },
+          { "text": "Direct flame or fire", "category": "flame" },
+          { "text": "Hot surface or object", "category": "contact" },
+          { "text": "Chemical or electrical", "category": "special" }
+        ]
+      },
+      {
+        "id": "area",
+        "question": "Which area of the skin is burned?",
+        "options": [
+          { "text": "Hand or fingers", "category": "hand" },
+          { "text": "Arm or leg", "category": "limb" },
+          { "text": "Face or neck", "category": "face" },
+          { "text": "Torso", "category": "trunk" }
+        ]
+      },
+      {
+        "id": "severity",
+        "question": "Is the burn mild, blistered, or peeling?",
+        "options": [
+          { "text": "Red and painful (first degree)", "category": "first_degree" },
+          { "text": "Blistered (second degree)", "category": "second_degree" },
+          { "text": "White/charred (third degree)", "category": "third_degree" },
+          { "text": "Just redness, no blister", "category": "superficial" }
+        ]
+      }
+    ],
+
+    "wound": [
+      {
+        "id": "type",
+        "question": "Is it a cut, scratch, or deep wound?",
+        "options": [
+          { "text": "Shallow scratch", "category": "scratch" },
+          { "text": "Clean cut", "category": "cut" },
+          { "text": "Deep wound", "category": "deep" },
+          { "text": "Puncture wound", "category": "puncture" }
+        ]
+      },
+      {
+        "id": "bleeding",
+        "question": "Is there active bleeding?",
+        "options": [
+          { "text": "Heavy bleeding", "category": "severe_bleeding" },
+          { "text": "Moderate bleeding", "category": "moderate_bleeding" },
+          { "text": "Stopped bleeding", "category": "stopped" },
+          { "text": "No bleeding", "category": "no_bleeding" }
+        ]
+      },
+      {
+        "id": "cause",
+        "question": "How did the wound occur?",
+        "options": [
+          { "text": "Sharp object (knife, glass)", "category": "sharp" },
+          { "text": "Fall or accident", "category": "trauma" },
+          { "text": "Animal bite or scratch", "category": "bite" },
+          { "text": "Other cause", "category": "other" }
+        ]
+      }
+    ],
+
+    "sprain": [
+      {
+        "id": "location",
+        "question": "Which area is sprained (ankle, wrist, etc.)?",
+        "options": [
+          { "text": "Ankle", "category": "ankle" },
+          { "text": "Wrist", "category": "wrist" },
+          { "text": "Knee", "category": "knee" },
+          { "text": "Other joint", "category": "other" }
+        ]
+      },
+      {
+        "id": "swelling",
+        "question": "Is there visible swelling?",
+        "options": [
+          { "text": "Severe swelling", "category": "severe_swelling" },
+          { "text": "Moderate swelling", "category": "moderate_swelling" },
+          { "text": "Mild swelling", "category": "mild_swelling" },
+          { "text": "No swelling", "category": "no_swelling" }
+        ]
+      },
+      {
+        "id": "movement",
+        "question": "Does movement worsen the pain?",
+        "options": [
+          { "text": "Can't move at all", "category": "immobile" },
+          { "text": "Very painful to move", "category": "severe_pain" },
+          { "text": "Limited movement", "category": "restricted" },
+          { "text": "Can move with discomfort", "category": "mobile" }
+        ]
+      }
+    ],
+
+    "dizziness": [
+      {
+        "id": "type",
+        "question": "Do you feel spinning or light-headed?",
+        "options": [
+          { "text": "Room is spinning (vertigo)", "category": "vertigo" },
+          { "text": "Light-headed, about to faint", "category": "presyncope" },
+          { "text": "Unsteady balance", "category": "disequilibrium" },
+          { "text": "General floating feeling", "category": "general" }
+        ]
+      },
+      {
+        "id": "triggers",
+        "question": "Does it happen while standing or moving?",
+        "options": [
+          { "text": "When standing up suddenly", "category": "postural" },
+          { "text": "When moving head", "category": "positional" },
+          { "text": "Constant, not position-related", "category": "constant" },
+          { "text": "Only with certain movements", "category": "movement" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long does the dizziness last?",
+        "options": [
+          { "text": "Few seconds", "category": "brief" },
+          { "text": "Few minutes", "category": "short" },
+          { "text": "Hours", "category": "prolonged" },
+          { "text": "Constant throughout day", "category": "persistent" }
+        ]
+      }
+    ],
+
+    "hypertension": [
+      {
+        "id": "bp_reading",
+        "question": "Do you know your recent blood pressure reading?",
+        "options": [
+          { "text": "Above 140/90 mmHg", "category": "high" },
+          { "text": "130-139/80-89 mmHg", "category": "elevated" },
+          { "text": "Below 130/80 mmHg", "category": "normal" },
+          { "text": "I don't know", "category": "unknown" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Are you experiencing headache or breathlessness?",
+        "options": [
+          { "text": "Severe headache", "category": "headache" },
+          { "text": "Breathlessness", "category": "breathless" },
+          { "text": "Chest discomfort", "category": "chest" },
+          { "text": "No symptoms", "category": "asymptomatic" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have your BP symptoms been present?",
+        "options": [
+          { "text": "Just noticed today", "category": "acute" },
+          { "text": "Few days", "category": "recent" },
+          { "text": "Ongoing issue", "category": "chronic" },
+          { "text": "First time checking", "category": "new" }
+        ]
+      }
+    ],
+
+    "low_blood_pressure": [
+      {
+        "id": "symptoms",
+        "question": "Do you feel weak, dizzy, or light-headed?",
+        "options": [
+          { "text": "Very weak and dizzy", "category": "severe" },
+          { "text": "Moderate weakness", "category": "moderate" },
+          { "text": "Slight dizziness", "category": "mild" },
+          { "text": "No symptoms", "category": "asymptomatic" }
+        ]
+      },
+      {
+        "id": "bp_reading",
+        "question": "Do you know your BP reading?",
+        "options": [
+          { "text": "Below 90/60 mmHg", "category": "low" },
+          { "text": "90-100/60-70 mmHg", "category": "borderline" },
+          { "text": "Above 100/70 mmHg", "category": "normal" },
+          { "text": "I don't know", "category": "unknown" }
+        ]
+      },
+      {
+        "id": "triggers",
+        "question": "Did this start after stress, fasting, or dehydration?",
+        "options": [
+          { "text": "After not eating for long", "category": "fasting" },
+          { "text": "After dehydration", "category": "dehydration" },
+          { "text": "After stress or anxiety", "category": "stress" },
+          { "text": "No clear trigger", "category": "spontaneous" }
+        ]
+      }
+    ],
+
+    "diabetes_symptoms": [
+      {
+        "id": "thirst",
+        "question": "Are you feeling excessive thirst?",
+        "options": [
+          { "text": "Extreme, constant thirst", "category": "severe" },
+          { "text": "Increased thirst", "category": "moderate" },
+          { "text": "Slightly more thirsty", "category": "mild" },
+          { "text": "Normal thirst", "category": "normal" }
+        ]
+      },
+      {
+        "id": "urination",
+        "question": "Are you urinating more frequently?",
+        "options": [
+          { "text": "Very frequent, including at night", "category": "severe" },
+          { "text": "More than usual", "category": "increased" },
+          { "text": "Slightly more frequent", "category": "mild" },
+          { "text": "Normal frequency", "category": "normal" }
+        ]
+      },
+      {
+        "id": "fatigue",
+        "question": "Are you experiencing unexplained tiredness?",
+        "options": [
+          { "text": "Extreme fatigue", "category": "severe" },
+          { "text": "Moderate tiredness", "category": "moderate" },
+          { "text": "Mild fatigue", "category": "mild" },
+          { "text": "Normal energy levels", "category": "normal" }
+        ]
+      }
+    ],
+
+    "period_pain": [
+      {
+        "id": "severity",
+        "question": "Is the pain mild, moderate, or severe?",
+        "options": [
+          { "text": "Mild, manageable", "category": "mild" },
+          { "text": "Moderate, affecting daily activities", "category": "moderate" },
+          { "text": "Severe, unable to function", "category": "severe" },
+          { "text": "Extreme, needs medical attention", "category": "extreme" }
+        ]
+      },
+      {
+        "id": "location",
+        "question": "Is the pain in the lower abdomen or lower back?",
+        "options": [
+          { "text": "Lower abdomen only", "category": "abdominal" },
+          { "text": "Lower back only", "category": "back" },
+          { "text": "Both abdomen and back", "category": "both" },
+          { "text": "Radiating to thighs", "category": "radiating" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long do your cramps usually last?",
+        "options": [
+          { "text": "Few hours", "category": "short" },
+          { "text": "1–2 days", "category": "moderate" },
+          { "text": "3–4 days", "category": "prolonged" },
+          { "text": "Throughout entire period", "category": "persistent" }
+        ]
+      }
+    ],
+
+    "urine_infection": [
+      {
+        "id": "symptoms",
+        "question": "Do you experience burning or pain while urinating?",
+        "options": [
+          { "text": "Severe burning sensation", "category": "severe_burning" },
+          { "text": "Moderate pain", "category": "moderate_pain" },
+          { "text": "Mild discomfort", "category": "mild" },
+          { "text": "No burning", "category": "none" }
+        ]
+      },
+      {
+        "id": "frequency",
+        "question": "Do you feel the urge to urinate frequently?",
+        "options": [
+          { "text": "Very frequent urges", "category": "frequent" },
+          { "text": "More than usual", "category": "increased" },
+          { "text": "Slightly more frequent", "category": "mild_increase" },
+          { "text": "Normal frequency", "category": "normal" }
+        ]
+      },
+      {
+        "id": "color",
+        "question": "Is your urine cloudy or dark?",
+        "options": [
+          { "text": "Cloudy or bloody", "category": "abnormal" },
+          { "text": "Dark yellow", "category": "dark" },
+          { "text": "Slightly cloudy", "category": "mild_cloudy" },
+          { "text": "Normal color", "category": "normal" }
+        ]
+      }
+    ],
+
+    "itching": [
+      {
+        "id": "location",
+        "question": "Where do you feel the itching?",
+        "options": [
+          { "text": "All over body", "category": "generalized" },
+          { "text": "Specific area (arms, legs)", "category": "localized" },
+          { "text": "Private areas", "category": "intimate" },
+          { "text": "Scalp or face", "category": "head" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been experiencing itching?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "Few days", "category": "recent" },
+          { "text": "1–2 weeks", "category": "subacute" },
+          { "text": "More than 2 weeks", "category": "chronic" }
+        ]
+      },
+      {
+        "id": "trigger",
+        "question": "Did it start after using new soap, clothing, or food?",
+        "options": [
+          { "text": "After new soap/detergent", "category": "product" },
+          { "text": "After wearing new clothes", "category": "fabric" },
+          { "text": "After eating certain food", "category": "food" },
+          { "text": "No clear trigger", "category": "unknown" }
+        ]
+      }
+    ],
+
+    "insomnia": [
+      {
+        "id": "difficulty",
+        "question": "Do you have trouble falling asleep or staying asleep?",
+        "options": [
+          { "text": "Can't fall asleep", "category": "onset" },
+          { "text": "Wake up frequently", "category": "maintenance" },
+          { "text": "Wake up too early", "category": "early_morning" },
+          { "text": "Both falling and staying asleep", "category": "mixed" }
+        ]
+      },
+      {
+        "id": "hours",
+        "question": "How many hours do you sleep per night?",
+        "options": [
+          { "text": "Less than 4 hours", "category": "severe" },
+          { "text": "4–6 hours", "category": "moderate" },
+          { "text": "6–7 hours", "category": "mild" },
+          { "text": "7+ hours but poor quality", "category": "poor_quality" }
+        ]
+      },
+      {
+        "id": "stress",
+        "question": "Are you currently stressed or anxious?",
+        "options": [
+          { "text": "Very stressed", "category": "high_stress" },
+          { "text": "Moderately stressed", "category": "moderate_stress" },
+          { "text": "Slightly worried", "category": "mild_stress" },
+          { "text": "Not stressed", "category": "no_stress" }
+        ]
+      }
+    ],
+
+    "stress": [
+      {
+        "id": "cause",
+        "question": "Do you know the cause of your stress?",
+        "options": [
+          { "text": "Work-related", "category": "work" },
+          { "text": "Personal/relationship issues", "category": "personal" },
+          { "text": "Financial concerns", "category": "financial" },
+          { "text": "Multiple factors or unknown", "category": "complex" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Are you experiencing headaches or sleep difficulty?",
+        "options": [
+          { "text": "Frequent headaches", "category": "headaches" },
+          { "text": "Sleep problems", "category": "insomnia" },
+          { "text": "Irritability or mood swings", "category": "mood" },
+          { "text": "Physical tension", "category": "physical" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been feeling stressed?",
+        "options": [
+          { "text": "Few days", "category": "acute" },
+          { "text": "Few weeks", "category": "recent" },
+          { "text": "Few months", "category": "chronic" },
+          { "text": "More than 6 months", "category": "long_term" }
+        ]
+      }
+    ],
+
+    "anxiety": [
+      {
+        "id": "symptoms",
+        "question": "Do you experience nervousness, sweating, or rapid heartbeat?",
+        "options": [
+          { "text": "Rapid heartbeat/palpitations", "category": "physical" },
+          { "text": "Excessive sweating", "category": "sweating" },
+          { "text": "Nervousness and worry", "category": "psychological" },
+          { "text": "All of the above", "category": "severe" }
+        ]
+      },
+      {
+        "id": "triggers",
+        "question": "Do certain situations trigger your anxiety?",
+        "options": [
+          { "text": "Social situations", "category": "social" },
+          { "text": "Specific phobias", "category": "phobic" },
+          { "text": "No specific trigger", "category": "generalized" },
+          { "text": "Panic attacks", "category": "panic" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been feeling anxious?",
+        "options": [
+          { "text": "Recent episodes", "category": "acute" },
+          { "text": "Few weeks", "category": "recent" },
+          { "text": "Few months", "category": "persistent" },
+          { "text": "More than 6 months", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "sunstroke": [
+      {
+        "id": "exposure",
+        "question": "Were you exposed to direct sunlight for long durations?",
+        "options": [
+          { "text": "Yes, more than 2 hours", "category": "prolonged" },
+          { "text": "Yes, 1–2 hours", "category": "moderate" },
+          { "text": "Less than 1 hour", "category": "brief" },
+          { "text": "No direct exposure", "category": "none" }
+        ]
+      },
+      {
+        "id": "symptoms",
+        "question": "Are you experiencing dizziness or headache?",
+        "options": [
+          { "text": "Severe headache and dizziness", "category": "severe" },
+          { "text": "Nausea and weakness", "category": "moderate" },
+          { "text": "Mild discomfort", "category": "mild" },
+          { "text": "Hot skin and confusion", "category": "emergency" }
+        ]
+      },
+      {
+        "id": "hydration",
+        "question": "Have you been drinking enough water?",
+        "options": [
+          { "text": "No, very little water", "category": "dehydrated" },
+          { "text": "Some water", "category": "inadequate" },
+          { "text": "Moderate water intake", "category": "moderate" },
+          { "text": "Well hydrated", "category": "adequate" }
+        ]
+      }
+    ],
+
+    "cold_sores": [
+      {
+        "id": "location",
+        "question": "Are the sores on your lips or inside the mouth?",
+        "options": [
+          { "text": "On outer lips", "category": "lips" },
+          { "text": "Inside mouth", "category": "mouth" },
+          { "text": "Around mouth area", "category": "perioral" },
+          { "text": "Multiple locations", "category": "multiple" }
+        ]
+      },
+      {
+        "id": "pain",
+        "question": "Is there pain or burning sensation?",
+        "options": [
+          { "text": "Severe pain", "category": "severe_pain" },
+          { "text": "Moderate burning", "category": "burning" },
+          { "text": "Mild tingling", "category": "tingling" },
+          { "text": "No pain", "category": "painless" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you had the cold sores?",
+        "options": [
+          { "text": "Just appeared", "category": "new" },
+          { "text": "1–3 days", "category": "early" },
+          { "text": "4–7 days", "category": "active" },
+          { "text": "More than a week", "category": "prolonged" }
+        ]
+      }
+    ],
+
+    "motion_sickness": [
+      {
+        "id": "symptoms",
+        "question": "Do you feel nausea or dizziness during travel?",
+        "options": [
+          { "text": "Severe nausea and vomiting", "category": "severe" },
+          { "text": "Moderate nausea", "category": "moderate" },
+          { "text": "Mild dizziness", "category": "mild" },
+          { "text": "General discomfort", "category": "discomfort" }
+        ]
+      },
+      {
+        "id": "travel_type",
+        "question": "Does this happen in car, bus, or train?",
+        "options": [
+          { "text": "Car", "category": "car" },
+          { "text": "Bus", "category": "bus" },
+          { "text": "Train", "category": "train" },
+          { "text": "All vehicles", "category": "all" }
+        ]
+      },
+      {
+        "id": "frequency",
+        "question": "Does it happen every time you travel?",
+        "options": [
+          { "text": "Always", "category": "always" },
+          { "text": "Most of the time", "category": "frequent" },
+          { "text": "Sometimes", "category": "occasional" },
+          { "text": "Rarely", "category": "rare" }
+        ]
+      }
+    ],
+
+    "itchy_scalp": [
+      {
+        "id": "flakes",
+        "question": "Do you notice dandruff or white flakes?",
+        "options": [
+          { "text": "Heavy dandruff", "category": "severe_dandruff" },
+          { "text": "Moderate flakes", "category": "moderate_dandruff" },
+          { "text": "Mild flaking", "category": "mild_dandruff" },
+          { "text": "No flakes", "category": "no_flakes" }
+        ]
+      },
+      {
+        "id": "itching",
+        "question": "How severe is the itching?",
+        "options": [
+          { "text": "Constant, unbearable itching", "category": "severe" },
+          { "text": "Frequent itching", "category": "moderate" },
+          { "text": "Occasional itching", "category": "mild" },
+          { "text": "Slight irritation", "category": "minimal" }
+        ]
+      },
+      {
+        "id": "triggers",
+        "question": "Does it worsen after using a specific shampoo?",
+        "options": [
+          { "text": "Yes, after certain products", "category": "product_related" },
+          { "text": "After oiling hair", "category": "oil_related" },
+          { "text": "In certain weather", "category": "weather_related" },
+          { "text": "No clear pattern", "category": "unknown" }
+        ]
+      }
+    ],
+
+    "hair_fall": [
+      {
+        "id": "amount",
+        "question": "Are you experiencing mild or heavy hair fall?",
+        "options": [
+          { "text": "Heavy, noticeable thinning", "category": "heavy" },
+          { "text": "Moderate hair loss", "category": "moderate" },
+          { "text": "Mild, within normal range", "category": "mild" },
+          { "text": "Bald patches appearing", "category": "severe" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been losing hair?",
+        "options": [
+          { "text": "Recent, few weeks", "category": "recent" },
+          { "text": "1–3 months", "category": "subacute" },
+          { "text": "3–6 months", "category": "prolonged" },
+          { "text": "More than 6 months", "category": "chronic" }
+        ]
+      },
+      {
+        "id": "cause",
+        "question": "Does hair fall increase after stress or travel?",
+        "options": [
+          { "text": "After stress", "category": "stress_related" },
+          { "text": "Seasonal pattern", "category": "seasonal" },
+          { "text": "After illness", "category": "illness_related" },
+          { "text": "No clear trigger", "category": "unknown" }
+        ]
+      }
+    ],
+
+    "gas": [
+      {
+        "id": "symptoms",
+        "question": "Do you feel bloating, burping, or stomach pressure?",
+        "options": [
+          { "text": "Severe bloating", "category": "bloating" },
+          { "text": "Excessive burping", "category": "burping" },
+          { "text": "Stomach pressure and discomfort", "category": "pressure" },
+          { "text": "All symptoms", "category": "multiple" }
+        ]
+      },
+      {
+        "id": "triggers",
+        "question": "Did you eat spicy, oily, or heavy food?",
+        "options": [
+          { "text": "Yes, very spicy food", "category": "spicy" },
+          { "text": "Yes, oily/fried food", "category": "oily" },
+          { "text": "Heavy meal", "category": "heavy" },
+          { "text": "Gas-producing foods (beans, cabbage)", "category": "gas_foods" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been feeling gassy?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "Few hours", "category": "recent" },
+          { "text": "Today", "category": "today" },
+          { "text": "Recurring problem", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "sciatica": [
+      {
+        "id": "location",
+        "question": "Is the pain in the lower back radiating to the legs?",
+        "options": [
+          { "text": "Lower back only", "category": "localized" },
+          { "text": "Radiating to one leg", "category": "unilateral" },
+          { "text": "Radiating to both legs", "category": "bilateral" },
+          { "text": "Down to foot", "category": "complete" }
+        ]
+      },
+      {
+        "id": "severity",
+        "question": "How severe is the nerve pain?",
+        "options": [
+          { "text": "Mild tingling or numbness", "category": "mild" },
+          { "text": "Moderate shooting pain", "category": "moderate" },
+          { "text": "Severe, sharp nerve pain", "category": "severe" },
+          { "text": "Weakness in leg", "category": "weakness" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you had this pain?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "Few days", "category": "recent" },
+          { "text": "1–2 weeks", "category": "subacute" },
+          { "text": "More than 2 weeks", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "chest_congestion": [
+      {
+        "id": "mucus",
+        "question": "Are you experiencing thick mucus or heaviness in chest?",
+        "options": [
+          { "text": "Severe chest heaviness", "category": "severe" },
+          { "text": "Thick mucus, hard to cough out", "category": "thick_mucus" },
+          { "text": "Moderate congestion", "category": "moderate" },
+          { "text": "Mild tightness", "category": "mild" }
+        ]
+      },
+      {
+        "id": "cough",
+        "question": "Do you have cough along with congestion?",
+        "options": [
+          { "text": "Yes, productive cough", "category": "productive" },
+          { "text": "Yes, dry cough", "category": "dry" },
+          { "text": "Occasional cough", "category": "occasional" },
+          { "text": "No cough", "category": "no_cough" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been feeling chest congestion?",
+        "options": [
+          { "text": "1–2 days", "category": "acute" },
+          { "text": "3–5 days", "category": "recent" },
+          { "text": "1–2 weeks", "category": "prolonged" },
+          { "text": "More than 2 weeks", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "breathlessness": [
+      {
+        "id": "severity",
+        "question": "Is the breathlessness mild or severe?",
+        "options": [
+          { "text": "Severe, gasping for air", "category": "severe" },
+          { "text": "Moderate difficulty breathing", "category": "moderate" },
+          { "text": "Mild shortness of breath", "category": "mild" },
+          { "text": "Only with exertion", "category": "exertional" }
+        ]
+      },
+      {
+        "id": "trigger",
+        "question": "Does it occur during walking, resting, or climbing stairs?",
+        "options": [
+          { "text": "Even at rest", "category": "rest" },
+          { "text": "When walking", "category": "walking" },
+          { "text": "When climbing stairs", "category": "stairs" },
+          { "text": "During exercise only", "category": "exercise" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been feeling breathless?",
+        "options": [
+          { "text": "Just started", "category": "acute" },
+          { "text": "Few hours", "category": "recent" },
+          { "text": "Few days", "category": "subacute" },
+          { "text": "Ongoing issue", "category": "chronic" }
+        ]
+      }
+    ],
+
+    "fatigue": [
+      {
+        "id": "energy",
+        "question": "Do you feel low energy throughout the day?",
+        "options": [
+          { "text": "Extreme exhaustion", "category": "severe" },
+          { "text": "Constantly tired", "category": "persistent" },
+          { "text": "Tired after minimal activity", "category": "easy_fatigue" },
+          { "text": "Low energy at specific times", "category": "intermittent" }
+        ]
+      },
+      {
+        "id": "sleep",
+        "question": "Are you getting proper sleep?",
+        "options": [
+          { "text": "No, sleeping very little", "category": "poor_sleep" },
+          { "text": "Sleeping but not restful", "category": "unrefreshing" },
+          { "text": "Irregular sleep schedule", "category": "irregular" },
+          { "text": "Sleeping well but still tired", "category": "despite_sleep" }
+        ]
+      },
+      {
+        "id": "duration",
+        "question": "How long have you been feeling fatigued?",
+        "options": [
+          { "text": "Few days", "category": "acute" },
+          { "text": "1–2 weeks", "category": "recent" },
+          { "text": "Few weeks to months", "category": "persistent" },
+          { "text": "More than 3 months", "category": "chronic" }
+        ]
+      }
+    ]
+  }
+}
