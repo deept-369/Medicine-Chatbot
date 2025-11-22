@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Chatbot - AI Health Assistant</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #f5f7fa 0%, #ffffff 100%);
+        position: relative;
+      }
+
+      body::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: radial-gradient(
+            circle at 20% 50%,
+            rgba(59, 130, 246, 0.05) 0%,
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at 80% 80%,
+            rgba(168, 85, 247, 0.05) 0%,
+            transparent 50%
+          );
+        pointer-events: none;
+      }
+
+      .container {
+        width: 100%;
+        height: 100vh;
+        background: linear-gradient(145deg, #ffffff 0%, #f8f9fa 100%);
+        overflow: hidden;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+      }
+
+      .header {
+        background: linear-gradient(135deg, #ffffff 0%, #f8fafc 100%);
+        color: #1e293b;
+        padding: 10px;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0 4px 20px rgba(59, 130, 246, 0.15);
+      }
+
+      .header::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          45deg,
+          transparent 30%,
+          rgba(168, 85, 247, 0.05) 50%,
+          transparent 70%
+        );
+        animation: shimmer 3s infinite;
+      }
+
+      @keyframes shimmer {
+        0%,
+        100% {
+          transform: translateX(-100%);
+        }
+        50% {
+          transform: translateX(100%);
+        }
+      }
+
+      .header h1 {
+        font-size: 2em;
+        margin-bottom: 10px;
+        position: relative;
+        text-shadow: none;
+        letter-spacing: 0.5px;
+        background: linear-gradient(135deg, #000000 0%, #009eff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        font-weight: 700;
+      }
+
+      .header p {
+        opacity: 0.85;
+        font-size: 1.1em;
+        position: relative;
+        color: #64748b;
+        font-weight: 400;
+      }
+
+      .chat-container {
+        flex: 1;
+        overflow-y: auto;
+        padding: 30px;
+        background: linear-gradient(to bottom, #ffffff 0%, #f8fafc 100%);
+        position: relative;
+      }
+
+      .chat-container::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        background: linear-gradient(
+          to bottom,
+          rgba(255, 255, 255, 0.8),
+          transparent
+        );
+        pointer-events: none;
+        z-index: 1;
+      }
+
+      .message {
+        margin-bottom: 20px;
+        animation: fadeIn 0.4s ease-out;
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+          transform: translateY(15px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      .bot-message {
+        display: flex;
+        gap: 15px;
+      }
+
+      .bot-avatar {
+        width: 45px;
+        height: 45px;
+        background: linear-gradient(135deg, #3b82f6 0%, #1e40af 100%);
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        font-size: 22px;
+        flex-shrink: 0;
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.35),
+          inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+        border: 2px solid rgba(255, 255, 255, 0.4);
+      }
+
+      .message-content {
+        flex: 1;
+      }
+
+      .message-bubble {
+        background: linear-gradient(145deg, #f0f4f8 0%, #e2e8f0 100%);
+        padding: 18px 22px;
+        border-radius: 18px;
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.08),
+          0 1px 2px rgba(0, 0, 0, 0.04);
+        border: 1px solid rgba(226, 232, 240, 0.8);
+        color: #1e293b;
+        line-height: 1.6;
+      }
+
+      .user-message .message-bubble {
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        color: #ffffff;
+        margin-left: auto;
+        max-width: 70%;
+        box-shadow: 0 4px 12px rgba(59, 130, 246, 0.3),
+          inset 0 1px 0 rgba(255, 255, 255, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.2);
+      }
+
+      .user-message {
+        display: flex;
+        justify-content: flex-end;
+      }
+
+      .options-container {
+        margin-top: 15px;
+        display: grid;
+        gap: 10px;
+      }
+
+      .option-btn {
+        background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        border: 2px solid #3b82f6;
+        color: #1e293b;
+        padding: 14px 20px;
+        border-radius: 12px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+        font-size: 1em;
+        text-align: left;
+        box-shadow: 0 2px 8px rgba(59, 130, 246, 0.12);
+        font-weight: 500;
+        position: relative;
+        overflow: hidden;
+      }
+
+      .option-btn::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(59, 130, 246, 0.15),
+          transparent
+        );
+        transition: left 0.5s;
+      }
+
+      .option-btn:hover::before {
+        left: 100%;
+      }
+
+      .option-btn:hover {
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        color: white;
+        transform: translateX(8px);
+        box-shadow: 0 4px 15px rgba(59, 130, 246, 0.4);
+        border-color: #2563eb;
+      }
+
+      .prescription-card {
+        background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        border-radius: 18px;
+        padding: 25px;
+        margin-top: 15px;
+        box-shadow: 0 8px 24px rgba(59, 130, 246, 0.15),
+          inset 0 1px 0 rgba(255, 255, 255, 0.9);
+        border: 1px solid rgba(59, 130, 246, 0.15);
+      }
+
+      .prescription-header {
+        background: linear-gradient(135deg, #006eff 0%, #000000 100%);
+        color: white;
+        padding: 20px;
+        border-radius: 12px;
+        margin-bottom: 20px;
+        box-shadow: 0 4px 15px rgba(168, 85, 247, 0.3),
+          inset 0 -2px 5px rgba(0, 0, 0, 0.1);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+      }
+
+      .prescription-header h3 {
+        margin-bottom: 5px;
+        text-shadow: 0 1px 3px rgba(0, 0, 0, 0.15);
+        font-weight: 600;
+      }
+
+      .prescription-section {
+        margin-bottom: 18px;
+        padding: 18px;
+        background: linear-gradient(145deg, #f0f4f8 0%, #e2e8f0 100%);
+        border-radius: 12px;
+        border-left: 4px solid #3b82f6;
+        box-shadow: 0 2px 6px rgba(59, 130, 246, 0.1);
+      }
+
+      /* Two-column layout for prescription: left = details, right = image */
+      .prescription-body {
+        display: flex;
+        gap: 20px;
+        align-items: stretch;
+      }
+
+      .prescription-info {
+        flex: 1 1 50%;
+      }
+
+      .prescription-image {
+        flex: 1 1 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 10px;
+      }
+
+      .prescription-image img {
+        max-width: 100%;
+        height: auto;
+        border-radius: 12px;
+        box-shadow: 0 8px 30px rgba(0, 0, 0, 0.12);
+        border: 1px solid rgba(0, 0, 0, 0.05);
+      }
+
+      @media (max-width: 800px) {
+        .prescription-body {
+          flex-direction: column;
+        }
+      }
+
+      .prescription-section h4 {
+        color: #1e293b;
+        margin-bottom: 10px;
+        font-size: 1.1em;
+        font-weight: 600;
+      }
+
+      .prescription-section p {
+        line-height: 1.7;
+        color: #334155;
+      }
+
+      .input-container {
+        padding: 20px;
+        background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        border-top: 2px solid rgba(59, 130, 246, 0.2);
+        display: flex;
+        gap: 12px;
+        box-shadow: 0 -4px 16px rgba(59, 130, 246, 0.08);
+      }
+
+      #userInput {
+        flex: 1;
+        padding: 16px 20px;
+        border: 2px solid #e2e8f0;
+        border-radius: 28px;
+        font-size: 1em;
+        outline: none;
+        transition: all 0.3s ease;
+        background: linear-gradient(145deg, #ffffff 0%, #f8fafc 100%);
+        color: #1e293b;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.04);
+      }
+
+      #userInput:focus {
+        border-color: #3b82f6;
+        background: #ffffff;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.04),
+          0 0 0 3px rgba(59, 130, 246, 0.12);
+      }
+
+      #sendBtn {
+        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%);
+        color: white;
+        border: none;
+        padding: 16px 32px;
+        border-radius: 28px;
+        cursor: pointer;
+        font-size: 1em;
+        font-weight: 600;
+        transition: all 0.3s ease;
+        box-shadow: 0 4px 14px rgba(59, 130, 246, 0.35),
+          inset 0 -2px 5px rgba(0, 0, 0, 0.15);
+        border: 1px solid rgba(255, 255, 255, 0.25);
+        position: relative;
+        overflow: hidden;
+      }
+
+      #sendBtn::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        width: 0;
+        height: 0;
+        border-radius: 50%;
+        background: rgba(255, 255, 255, 0.3);
+        transform: translate(-50%, -50%);
+        transition: width 0.6s, height 0.6s;
+      }
+
+      #sendBtn:hover::before {
+        width: 300px;
+        height: 300px;
+      }
+
+      #sendBtn:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 18px rgba(59, 130, 246, 0.4),
+          inset 0 -2px 5px rgba(0, 0, 0, 0.15);
+      }
+
+      #sendBtn:active {
+        transform: translateY(0);
+      }
+
+      #sendBtn:disabled {
+        opacity: 0.5;
+        cursor: not-allowed;
+        transform: none;
+      }
+
+      .loading {
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        border-radius: 50%;
+        background: #3b82f6;
+        animation: loading 1.4s infinite ease-in-out;
+        margin: 0 2px;
+      }
+
+      .loading:nth-child(2) {
+        animation-delay: 0.2s;
+      }
+
+      .loading:nth-child(3) {
+        animation-delay: 0.4s;
+      }
+
+      @keyframes loading {
+        0%,
+        80%,
+        100% {
+          opacity: 0.3;
+          transform: scale(0.8);
+        }
+        40% {
+          opacity: 1;
+          transform: scale(1.2);
+        }
+      }
+
+      .question-progress {
+        background: linear-gradient(145deg, #e2e8f0 0%, #cbd5e1 100%);
+        height: 6px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+        overflow: hidden;
+        box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.08);
+      }
+
+      .question-progress-bar {
+        background: linear-gradient(90deg, #3b82f6 0%, #a855f7 100%);
+        height: 100%;
+        transition: width 0.5s ease;
+        box-shadow: 0 0 10px rgba(59, 130, 246, 0.4);
+        position: relative;
+        overflow: hidden;
+      }
+
+      .question-progress-bar::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: linear-gradient(
+          90deg,
+          transparent,
+          rgba(255, 255, 255, 0.3),
+          transparent
+        );
+        animation: progressShimmer 2s infinite;
+      }
+
+      @keyframes progressShimmer {
+        0% {
+          transform: translateX(-100%);
+        }
+        100% {
+          transform: translateX(100%);
+        }
+      }
+
+      .warning {
+        background: linear-gradient(145deg, #fef3c7 0%, #fde68a 100%);
+        border-left: 4px solid #f59e0b;
+        padding: 18px;
+        border-radius: 12px;
+        margin-top: 15px;
+        box-shadow: 0 3px 10px rgba(245, 158, 11, 0.15);
+        border: 1px solid rgba(245, 158, 11, 0.25);
+      }
+
+      .warning strong {
+        color: #b45309;
+        font-weight: 600;
+      }
+
+      @media (max-width: 600px) {
+        .header h1 {
+          font-size: 1.5em;
+        }
+
+        .chat-container {
+          padding: 15px;
+        }
+      }
+
+      /* Scrollbar styling */
+      .chat-container::-webkit-scrollbar {
+        width: 8px;
+      }
+
+      .chat-container::-webkit-scrollbar-track {
+        background: rgba(226, 232, 240, 0.4);
+        border-radius: 10px;
+      }
+
+      .chat-container::-webkit-scrollbar-thumb {
+        background: linear-gradient(180deg, #3b82f6 0%, #2563eb 100%);
+        border-radius: 10px;
+        box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.15);
+      }
+
+      .chat-container::-webkit-scrollbar-thumb:hover {
+        background: linear-gradient(180deg, #2563eb 0%, #1e40af 100%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>
+          <img
+            src="static/images/medicine.png"
+            alt="Medicine Chatbot Logo"
+            style="width: 40px; height: 40px" />
+          Medicine Chatbot
+        </h1>
+        <p>Your AI Health Assistant</p>
+      </div>
+
+      <div class="chat-container" id="chatContainer">
+        <div class="message bot-message">
+          <div class="bot-avatar">🤖</div>
+          <div class="message-content">
+            <div class="message-bubble">
+              <p>
+                Hello! I'm your AI health assistant. I can help you understand
+                your symptoms and suggest appropriate remedies.
+              </p>
+              <p style="margin-top: 10px">
+                <strong>Please describe your health concern.</strong>
+              </p>
+              <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8">
+                For example: "I have a headache", "I have fever", "stomach
+                pain", etc.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-container">
+        <input
+          type="text"
+          id="userInput"
+          placeholder="Type your health concern here..." />
+        <button id="sendBtn" onclick="sendMessage()">Send</button>
+      </div>
+    </div>
+
+    <script>
+      let sessionId = "user_" + Date.now();
+      let waitingForAnswer = false;
+
+      // Enable Enter key to send message
+      document
+        .getElementById("userInput")
+        .addEventListener("keypress", function (e) {
+          if (e.key === "Enter" && !waitingForAnswer) {
+            sendMessage();
+          }
+        });
+
+      function addMessage(message, isUser = false) {
+        const chatContainer = document.getElementById("chatContainer");
+        const messageDiv = document.createElement("div");
+        messageDiv.className = isUser
+          ? "message user-message"
+          : "message bot-message";
+
+        if (isUser) {
+          messageDiv.innerHTML = `
+                    <div class="message-bubble">
+                        <p>${message}</p>
+                    </div>
+                `;
+        } else {
+          messageDiv.innerHTML = `
+                    <div class="bot-avatar">🤖</div>
+                    <div class="message-content">
+                        <div class="message-bubble">
+                            ${message}
+                        </div>
+                    </div>
+                `;
+        }
+
+        chatContainer.appendChild(messageDiv);
+        chatContainer.scrollTop = chatContainer.scrollHeight;
+      }
+
+      function addOptions(options, questionNum, totalQuestions) {
+        const chatContainer = document.getElementById("chatContainer");
+        const lastMessage = chatContainer.lastElementChild;
+        const messageContent = lastMessage.querySelector(".message-content");
+
+        const optionsDiv = document.createElement("div");
+        optionsDiv.className = "options-container";
+
+        options.forEach((option, index) => {
+          const btn = document.createElement("button");
+          btn.className = "option-btn";
+          btn.textContent = option.text;
+          btn.onclick = () => selectOption(index, option.text);
+          optionsDiv.appendChild(btn);
+        });
+
+        messageContent.appendChild(optionsDiv);
+      }
+
+      function addProgressBar(current, total) {
+        const chatContainer = document.getElementById("chatContainer");
+        const lastMessage = chatContainer.lastElementChild;
+        const messageContent = lastMessage.querySelector(".message-content");
+
+        const progressDiv = document.createElement("div");
+        const percentage = (current / total) * 100;
+        progressDiv.innerHTML = `
+                <div style="margin-top: 15px; font-size: 0.9em; color: #2c3e50; font-weight: 500;">
+                    Question ${current} of ${total}
+                </div>
+                <div class="question-progress">
+                    <div class="question-progress-bar" style="width: ${percentage}%"></div>
+                </div>
+            `;
+
+        messageContent.insertBefore(progressDiv, messageContent.firstChild);
+      }
+
+      function showPrescription(data) {
+        const prescription = data.prescription;
+        const healthProblem = data.health_problem;
+
+        let prescriptionHTML = `
+                <div class="prescription-card">
+                    <div class="prescription-header">
+                        <h3><img src="/static/images/medical-prescription.png" alt="Prescription Icon" style="width: 24px; height: 24px;" /> Prescription for ${
+                          healthProblem.charAt(0).toUpperCase() +
+                          healthProblem.slice(1)
+                        }</h3>
+                    </div>
+
+                    <div class="prescription-body">
+                        <div class="prescription-info">
+                            <div class="prescription-section">
+                                <h4><img src="/static/images/medicine.png" alt="Medicine Icon" style="width: 24px; height: 24px;"/> Medicine</h4>
+                                <p><strong>${prescription.medicine}</strong></p>
+                            </div>
+
+                            <div class="prescription-section">
+                                <h4><img src="/static/images/medicines-time.png" alt="Dosage Icon" style="width: 24px; height: 24px;" /> Dosage</h4>
+                                <p>${prescription.dosage}</p>
+                            </div>
+
+                            <div class="prescription-section">
+                                <h4><img src="/static/images/idea.png" alt="Advice Icon" style="width: 24px; height: 24px;" /> Advice</h4>
+                                <p>${prescription.advice}</p>
+                            </div>
+
+                            <div class="warning">
+                                <strong>⚠️ Important:</strong> This is a general guideline. Please consult a qualified doctor for proper diagnosis and treatment. If symptoms persist or worsen, seek immediate medical attention.
+                            </div>
+                        </div>
+
+                        <div class="prescription-image">
+                            <img src="${
+                              prescription.image ||
+                              "static/images/medicinebasic.jpg"
+                            }" alt="Medicine Image" onerror="this.src='static/images/medicinebasic.jpg'" />
+                        </div>
+                    </div>
+                </div>
+            `;
+
+        addMessage(prescriptionHTML);
+
+        // Add restart option
+        setTimeout(() => {
+          addMessage(
+            '<p>Would you like to check another health concern?</p><button class="option-btn" onclick="restartChat()" style="margin-top: 10px;">Start New Consultation</button>'
+          );
+        }, 500);
+
+        waitingForAnswer = false;
+        document.getElementById("sendBtn").disabled = false;
+      }
+
+      async function sendMessage() {
+        const input = document.getElementById("userInput");
+        const message = input.value.trim();
+
+        if (!message) return;
+
+        addMessage(message, true);
+        input.value = "";
+
+        document.getElementById("sendBtn").disabled = true;
+        waitingForAnswer = true;
+
+        addMessage(
+          '<span class="loading"></span><span class="loading"></span><span class="loading"></span>'
+        );
+
+        try {
+          const response = await fetch("/api/start", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              message: message,
+              session_id: sessionId,
+            }),
+          });
+
+          const data = await response.json();
+
+          // Remove loading message
+          const chatContainer = document.getElementById("chatContainer");
+          chatContainer.removeChild(chatContainer.lastElementChild);
+
+          if (data.status === "not_found") {
+            addMessage(`<p>${data.message}</p>`);
+            waitingForAnswer = false;
+            document.getElementById("sendBtn").disabled = false;
+          } else if (data.status === "questions") {
+            addMessage(
+              `<p>${data.message}</p><p style="margin-top: 15px;"><strong>${data.question}</strong></p>`
+            );
+            addProgressBar(data.question_number, data.total_questions);
+            addOptions(
+              data.options,
+              data.question_number,
+              data.total_questions
+            );
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          const chatContainer = document.getElementById("chatContainer");
+          chatContainer.removeChild(chatContainer.lastElementChild);
+          addMessage("<p>Sorry, something went wrong. Please try again.</p>");
+          waitingForAnswer = false;
+          document.getElementById("sendBtn").disabled = false;
+        }
+      }
+
+      async function selectOption(index, text) {
+        // Disable all option buttons
+        const buttons = document.querySelectorAll(".option-btn");
+        buttons.forEach((btn) => (btn.disabled = true));
+
+        addMessage(text, true);
+        addMessage(
+          '<span class="loading"></span><span class="loading"></span><span class="loading"></span>'
+        );
+
+        try {
+          const response = await fetch("/api/answer", {
+            method: "POST",
+            headers: {
+              "Content-Type": "application/json",
+            },
+            body: JSON.stringify({
+              answer_index: index,
+              session_id: sessionId,
+            }),
+          });
+
+          const data = await response.json();
+
+          // Remove loading message
+          const chatContainer = document.getElementById("chatContainer");
+          chatContainer.removeChild(chatContainer.lastElementChild);
+
+          if (data.status === "questions") {
+            addMessage(`<p><strong>${data.question}</strong></p>`);
+            addProgressBar(data.question_number, data.total_questions);
+            addOptions(
+              data.options,
+              data.question_number,
+              data.total_questions
+            );
+          } else if (data.status === "prescription") {
+            showPrescription(data);
+          } else if (data.status === "error") {
+            addMessage(`<p>${data.message}</p>`);
+            waitingForAnswer = false;
+            document.getElementById("sendBtn").disabled = false;
+          }
+        } catch (error) {
+          console.error("Error:", error);
+          const chatContainer = document.getElementById("chatContainer");
+          chatContainer.removeChild(chatContainer.lastElementChild);
+          addMessage("<p>Sorry, something went wrong. Please try again.</p>");
+          waitingForAnswer = false;
+          document.getElementById("sendBtn").disabled = false;
+        }
+      }
+
+      function restartChat() {
+        sessionId = "user_" + Date.now();
+        waitingForAnswer = false;
+        document.getElementById("sendBtn").disabled = false;
+
+        const chatContainer = document.getElementById("chatContainer");
+        chatContainer.innerHTML = `
+                <div class="message bot-message">
+                    <div class="bot-avatar">🤖</div>
+                    <div class="message-content">
+                        <div class="message-bubble">
+                            <p>Hello! I'm your AI health assistant. I can help you understand your symptoms and suggest appropriate remedies.</p>
+                            <p style="margin-top: 10px;"><strong>Please describe your health concern.</strong></p>
+                            <p style="margin-top: 10px; font-size: 0.9em; opacity: 0.8;">For example: "I have a headache", "I have fever", "stomach pain", etc.</p>
+                        </div>
+                    </div>
+                </div>
+            `;
+      }
+    </script>
+  </body>
+</html>
